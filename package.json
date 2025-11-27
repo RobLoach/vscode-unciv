@@ -2,9 +2,13 @@
   "name": "vscode-unciv",
   "displayName": "Unciv",
   "description": "Validation and documentation hints for the game Unciv.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.106.1"
+  },
+  "scripts": {
+    "make": "npx @vscode/vsce package",
+    "make-install": "code --install-extension *.vsix"
   },
   "categories": [
     "Other"
@@ -21,109 +25,109 @@
     "jsonValidation": [
       {
         "fileMatch": [
-          "*/jsons/Beliefs.json"
+          "jsons/Beliefs.json"
         ],
         "url": "schemas/beliefs.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Buildings.json"
+          "jsons/Buildings.json"
         ],
         "url": "schemas/buildings.json"
       },
       {
         "fileMatch": [
-          "*/jsons/CityStateTypes.json"
+          "jsons/CityStateTypes.json"
         ],
         "url": "schemas/cityStateTypes.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Units.json"
+          "jsons/Units.json"
         ],
         "url": "schemas/units.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Nations.json"
+          "jsons/Nations.json"
         ],
         "url": "schemas/nations.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Personalities.json"
+          "jsons/Personalities.json"
         ],
         "url": "schemas/personalities.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Policies.json"
+          "jsons/Policies.json"
         ],
         "url": "schemas/policies.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Religions.json"
+          "jsons/Religions.json"
         ],
         "url": "schemas/religions.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Specialists.json"
+          "jsons/Specialists.json"
         ],
         "url": "schemas/specialists.json"
       },
       {
         "fileMatch": [
-          "*/jsons/TileImprovements.json"
+          "jsons/TileImprovements.json"
         ],
         "url": "schemas/tileImprovements.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Techs.json"
+          "jsons/Techs.json"
         ],
         "url": "schemas/techs.json"
       },
       {
         "fileMatch": [
-          "*/jsons/UnitTypes.json"
+          "jsons/UnitTypes.json"
         ],
         "url": "schemas/unitTypes.json"
       },
       {
         "fileMatch": [
-          "*/jsons/UnitPromotions.json"
+          "jsons/UnitPromotions.json"
         ],
         "url": "schemas/unitPromotions.json"
       },
       {
         "fileMatch": [
-          "*/jsons/TileResources.json"
+          "jsons/TileResources.json"
         ],
         "url": "schemas/tileResources.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Events.json"
+          "jsons/Events.json"
         ],
         "url": "schemas/events.json"
       },
       {
         "fileMatch": [
-          "*/jsons/Terrains.json"
+          "jsons/Terrains.json"
         ],
         "url": "schemas/terrains.json"
       },
       {
         "fileMatch": [
-          "*/jsons/UnitNameGroups.json"
+          "jsons/UnitNameGroups.json"
         ],
         "url": "schemas/unitNameGroups.json"
       },
       {
         "fileMatch": [
-          "*/jsons/VictoryTypes.json"
+          "jsons/VictoryTypes.json"
         ],
         "url": "schemas/victoryTypes.json"
       }
