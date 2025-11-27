@@ -1,14 +1,21 @@
 {
   "name": "vscode-unciv",
   "displayName": "Unciv",
-  "description": "Validation and documentation hints for the game Unciv.",
-  "version": "0.0.2",
+  "description": "Unciv VSCode extension to validate mods.",
+  "publisher": "robloach",
+  "author": "Rob Loach",
+  "license": "MIT",
+  "version": "0.1.0",
+  "icon": "icon.png",
+  "private": true,
   "engines": {
     "vscode": "^1.106.1"
   },
   "scripts": {
-    "make": "npx @vscode/vsce package",
-    "make-install": "code --install-extension *.vsix"
+    "prebuild": "rm -rf *.vsix",
+    "build": "npx @vscode/vsce package",
+    "postbuild": "code --install-extension *.vsix",
+    "test": ""
   },
   "categories": [
     "Other"
@@ -27,109 +34,109 @@
         "fileMatch": [
           "jsons/Beliefs.json"
         ],
-        "url": "schemas/beliefs.json"
+        "url": "./schemas/beliefs.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Buildings.json"
         ],
-        "url": "schemas/buildings.json"
+        "url": "./schemas/buildings.schema.json"
       },
       {
         "fileMatch": [
           "jsons/CityStateTypes.json"
         ],
-        "url": "schemas/cityStateTypes.json"
+        "url": "./schemas/cityStateTypes.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Units.json"
         ],
-        "url": "schemas/units.json"
+        "url": "./schemas/units.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Nations.json"
         ],
-        "url": "schemas/nations.json"
+        "url": "./schemas/nations.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Personalities.json"
         ],
-        "url": "schemas/personalities.json"
+        "url": "./schemas/personalities.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Policies.json"
         ],
-        "url": "schemas/policies.json"
+        "url": "./schemas/policies.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Religions.json"
         ],
-        "url": "schemas/religions.json"
+        "url": "./schemas/religions.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Specialists.json"
         ],
-        "url": "schemas/specialists.json"
+        "url": "./schemas/specialists.schema.json"
       },
       {
         "fileMatch": [
           "jsons/TileImprovements.json"
         ],
-        "url": "schemas/tileImprovements.json"
+        "url": "./schemas/tileImprovements.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Techs.json"
         ],
-        "url": "schemas/techs.json"
+        "url": "./schemas/techs.schema.json"
       },
       {
         "fileMatch": [
           "jsons/UnitTypes.json"
         ],
-        "url": "schemas/unitTypes.json"
+        "url": "./schemas/unitTypes.schema.json"
       },
       {
         "fileMatch": [
           "jsons/UnitPromotions.json"
         ],
-        "url": "schemas/unitPromotions.json"
+        "url": "./schemas/unitPromotions.schema.json"
       },
       {
         "fileMatch": [
           "jsons/TileResources.json"
         ],
-        "url": "schemas/tileResources.json"
+        "url": "./schemas/tileResources.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Events.json"
         ],
-        "url": "schemas/events.json"
+        "url": "./schemas/events.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Terrains.json"
         ],
-        "url": "schemas/terrains.json"
+        "url": "./schemas/terrains.schema.json"
       },
       {
         "fileMatch": [
           "jsons/UnitNameGroups.json"
         ],
-        "url": "schemas/unitNameGroups.json"
+        "url": "./schemas/unitNameGroups.schema.json"
       },
       {
         "fileMatch": [
           "jsons/VictoryTypes.json"
         ],
-        "url": "schemas/victoryTypes.json"
+        "url": "./schemas/victoryTypes.schema.json"
       }
     ]
   }

@@ -14,7 +14,7 @@
             "happiness": { "type": "number" },
             "faith": { "type": "number" },
 
-            "color": { "$ref": "color.json" },
+            "color": { "$ref": "color.schema.json" },
 
             "greatPersonPoints": {
                 "type": "object",

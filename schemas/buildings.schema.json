@@ -14,8 +14,8 @@
           "happiness": { "type": "number" },
           "faith": { "type": "number" },
 
-          "uniques": { "$ref": "uniques.json" },
-          "civilopediaText": { "$ref": "civilopediaText.json" },
+          "uniques": { "$ref": "uniques.schema.json" },
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" },
 
           "requiredTech": { "type": "string" },
           "cost": { "type": "integer" },
@@ -23,7 +23,7 @@
               "type": "integer",
               "description": "Gold upkeep per turn for this building"
           },
-          "percentStatBonus": { "$ref": "stats.json" },
+          "percentStatBonus": { "$ref": "stats.schema.json" },
           "specialistSlots": {
               "type": "object",
               "additionalProperties": { "type": "integer" },

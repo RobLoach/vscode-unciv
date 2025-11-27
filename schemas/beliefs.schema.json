@@ -5,14 +5,14 @@
       "type": "object",
       "properties": {
           "name": { "type": "string" },
-          "movementType": {
-              "enum": ["Land", "Water", "Air"]
+          "type": {
+              "enum": ["Pantheon", "Founder", "Follower", "Enhancer"]
           },
-          "uniques": { "$ref": "uniques.json" },
-          "civilopediaText": { "$ref": "civilopediaText.json" }
+          "uniques": { "$ref": "uniques.schema.json" },
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
       },
       "required": [
-          "name", "movementType"
+          "name", "type"
       ],
       "additionalProperties": false
   }

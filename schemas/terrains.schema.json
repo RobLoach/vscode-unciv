@@ -20,7 +20,7 @@
           "defenceBonus": { "type": "number", "description": "In percentages - so 0.1 is 10% bonus" },
           "unbuildable": { "type": "boolean", "description": "If true, nothing can be built here - not even resource improvements" },
 
-          "RGB": { "$ref": "color.json" },
+          "RGB": { "$ref": "color.schema.json" },
 
           "occursOn": { "type": "array", "items": { "type": "string" },
               "description": "For terrain features - List of terrains that this feature can appear on" },
@@ -29,9 +29,9 @@
           "turnsInto": { "type": "string", "description": "Used by Natural Wonders: it is the baseTerrain on top of which the Natural Wonder is placed" },
           "weight": { "type": "number", "description": "For natural wonders - the chance this nat wonder will be picked" },
 
-          "uniques": { "$ref": "uniques.json" },
+          "uniques": { "$ref": "uniques.schema.json" },
 
-          "civilopediaText": { "$ref": "civilopediaText.json" }
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
       },
       "required": [
           "name", "type"

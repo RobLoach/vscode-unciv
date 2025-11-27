@@ -18,7 +18,7 @@
               "items": { "type": "string" },
               "uniqueItems": true
           },
-          "improvementStats": { "$ref": "stats.json" },
+          "improvementStats": { "$ref": "stats.schema.json" },
 
           "production": { "type": "number" },
           "food": { "type": "number" },
@@ -28,27 +28,16 @@
           "happiness": { "type": "number" },
           "faith": { "type": "number" },
 
-          "majorDepositAmount": {"$ref": "#/definitions/resourceAmount"},
-          "minorDepositAmount": {"$ref": "#/definitions/resourceAmount"},
+          "majorDepositAmount": {"$ref": "tileResourcesAmount.schema.json"},
+          "minorDepositAmount": {"$ref": "tileResourcesAmount.schema.json"},
 
-          "uniques": { "$ref": "uniques.json" },
+          "uniques": { "$ref": "uniques.schema.json" },
 
-          "civilopediaText": { "$ref": "civilopediaText.json" }
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
       },
       "required": [
           "name"
       ],
-      "additionalProperties": false,
-      "definitions": {
-          "resourceAmount": {
-              "type": "object",
-              "properties": {
-                  "sparse": {"type": "number"},
-                  "default": {"type": "number"},
-                  "abundant": {"type": "number"}
-              },
-              "required": ["sparse","default","abundant"]
-          }
-      }
+      "additionalProperties": false
   }
 }

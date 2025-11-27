@@ -6,15 +6,15 @@
         "properties": {
             "name": { "type": "string" },
             "friendBonusUniques": {
-                "$ref": "uniques.json",
+                "$ref": "uniques.schema.json",
                 "description": "List of unique abilities granted to major civilizations when friends with this city state"
             },
             "allyBonusUniques": {
-                "$ref": "uniques.json",
+                "$ref": "uniques.schema.json",
                 "description": "List of unique abilities granted to major civilizations when allied to city state"
             },
             "color": {
-                "$ref": "color.json",
+                "$ref": "color.schema.json",
                 "description": "RGB color of text in civilopedia"
             }
         },

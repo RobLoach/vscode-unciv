@@ -15,11 +15,11 @@
               "description": "Used as **row** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution."
           },
 
-          "uniques": { "$ref": "uniques.json" },
-          "civilopediaText": { "$ref": "civilopediaText.json" },
+          "uniques": { "$ref": "uniques.schema.json" },
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" },
           
-          "outerColor": { "$ref": "color.json" },
-          "innerColor": { "$ref": "color.json" }
+          "outerColor": { "$ref": "color.schema.json" },
+          "innerColor": { "$ref": "color.schema.json" }
       },
       "required": [
           "name"

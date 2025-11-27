@@ -15,8 +15,8 @@
           "personality": { "type": "string" },
           "style": { "type": "string" },
           "cityStateType": { "type": "string" },
-          "outerColor": { "$ref": "color.json" },
-          "innerColor": { "$ref": "color.json" },
+          "outerColor": { "$ref": "color.schema.json" },
+          "innerColor": { "$ref": "color.schema.json" },
 
           "preferredVictoryType": { "type": "string" },
           "startBias": {
@@ -26,7 +26,7 @@
               "description": "Types of tiles where the civ will be more likely to start"
           },
 
-          "uniques": { "$ref": "uniques.json" },
+          "uniques": { "$ref": "uniques.schema.json" },
 
           "introduction": { "type": "string" },
           "tradeRequest": { "type": "string" },
@@ -58,7 +58,7 @@
               "type": "string",
               "description": "Freeform text that will be shown to users, overriding the list of uniques."
           },
-          "civilopediaText": { "$ref": "civilopediaText.json" }
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
       },
       "required": [
           "name", "outerColor", "cities"

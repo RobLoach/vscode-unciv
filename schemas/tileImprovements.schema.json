@@ -27,9 +27,9 @@
           "happiness": { "type": "number" },
           "faith": { "type": "number" },
 
-          "uniques": { "$ref": "uniques.json" },
+          "uniques": { "$ref": "uniques.schema.json" },
 
-          "civilopediaText": { "$ref": "civilopediaText.json" }
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
       },
       "required": [
           "name"

@@ -33,8 +33,8 @@
                 "additionalProperties": true
             },
 
-            "uniques": { "$ref": "uniques.json" },
-            "civilopediaText": { "$ref": "civilopediaText.json" }
+            "uniques": { "$ref": "uniques.schema.json" },
+            "civilopediaText": { "$ref": "civilopediaText.schema.json" }
         },
         "required": [
             "name"

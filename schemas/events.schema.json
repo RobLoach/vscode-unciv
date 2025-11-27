@@ -7,16 +7,16 @@
           "name": { "type": "string", "description": "Used for triggering via 'Triggers a [event] event' unique" },
           "text": { "type": "string", "description": "Flavor text displayed to user" },
           "presentation": { "enum": ["None", "Alert", "Floating"], "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators" },
-          "uniques": { "$ref": "uniques.json" },
-          "civilopediaText": { "$ref": "civilopediaText.json" },
+          "uniques": { "$ref": "uniques.schema.json" },
+          "civilopediaText": { "$ref": "civilopediaText.schema.json" },
           
           "choices": {
               "type": "array",
               "items": {
                   "properties": {
                       "text": { "type": "string" },
-                      "uniques": { "$ref": "uniques.json" },
-                      "civilopediaText": { "$ref": "civilopediaText.json" },
+                      "uniques": { "$ref": "uniques.schema.json" },
+                      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
                       "keyShortcut": { "type": "string" }
                   },
                   "required": ["text", "uniques"],
