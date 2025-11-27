@@ -5,7 +5,7 @@
   "publisher": "robloach",
   "author": "Rob Loach",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "icon": "icon.png",
   "private": true,
   "engines": {
@@ -32,7 +32,32 @@
   "contributes": {
     "configurationDefaults": {
       "files.associations": {
-        "jsons/*.json": "jsonc"
+        "Beliefs.json": "jsonc",
+        "Buildings.json": "jsonc",
+        "CityStateTypes.json": "jsonc",
+        "Difficulties.json": "jsonc",
+        "Eras.json": "jsonc",
+        "Events.json": "jsonc",
+        "GlobalUniques.json": "jsonc",
+        "ModOptions.json": "jsonc",
+        "Nations.json": "jsonc",
+        "Personalities.json": "jsonc",
+        "Policies.json": "jsonc",
+        "Quests.json": "jsonc",
+        "Religions.json": "jsonc",
+        "Ruins.json": "jsonc",
+        "Specialists.json": "jsonc",
+        "Speeds.json": "jsonc",
+        "Techs.json": "jsonc",
+        "Terrains.json": "jsonc",
+        "TileImprovements.json": "jsonc",
+        "Tutorials.json": "jsonc",
+        "TileResources.json": "jsonc",
+        "UnitNameGroups.json": "jsonc",
+        "UnitPromotions.json": "jsonc",
+        "Units.json": "jsonc",
+        "UnitTypes.json": "jsonc",
+        "VictoryTypes.json": "jsonc"
       }
     },
     "jsonValidation": [
