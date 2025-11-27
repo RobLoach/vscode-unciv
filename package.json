@@ -15,6 +15,7 @@
     "prebuild": "rm -rf *.vsix",
     "build": "npx @vscode/vsce package",
     "postbuild": "code --install-extension *.vsix",
+    "pub": "npx @vscode/vsce publish",
     "test": ""
   },
   "categories": [

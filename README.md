@@ -10,15 +10,15 @@ In Visual Studio Code open the command palette using Ctrl + P, paste the followi
 ext install robloach.unciv
 ```
 
-Alternatively, you can install it using `code`...
-```
-code --install-extension unciv
-```
-
 ## Development
 
 - https://github.com/yairm210/Unciv/tree/master/docs/Modders/schemas
 - https://code.visualstudio.com/api/references/contribution-points#contributes.jsonValidation
+
+To install from source, use...
+```
+npm run build
+```
 
 ## License
 
