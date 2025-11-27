@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "array",
+  "items": {
+      "type": "object",
+      "properties": {
+          "name": { "type": "string" },
+          "type": {
+              "enum": ["Pantheon", "Founder", "Follower", "Enhancer"]
+          },
+          "uniques": { "$ref": "uniques.json" },
+          "civilopediaText": { "$ref": "civilopediaText.json" }
+      },
+      "required": [
+          "name", "type"
+      ],
+      "additionalProperties": false
+  }
+}
