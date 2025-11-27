@@ -5,7 +5,7 @@
   "publisher": "robloach",
   "author": "Rob Loach",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "icon.png",
   "private": true,
   "engines": {
@@ -30,6 +30,11 @@
     "url": "https://github.com/robloach/vscode-unciv.git"
   },
   "contributes": {
+    "configurationDefaults": {
+      "files.associations": {
+        "jsons/*.json": "jsonc"
+      }
+    },
     "jsonValidation": [
       {
         "fileMatch": [
