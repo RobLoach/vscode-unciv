@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "VictoryTypes",
+    "description": "A list of different Victory Types, along with their milestones.",
     "type": "array",
     "items": {
         "type": "object",

@@ -1,4 +1,6 @@
 {
+    "title": "CivilopediaText",
+    "description": "A list of civilopedia text entries, including formatting and metadata for display.",
     "type": "array",
     "items": {
         "type": "object",

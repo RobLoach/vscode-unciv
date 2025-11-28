@@ -1,5 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Personalities",
+    "description": "A list of AI personalities, including their preferred victory types and stat focuses.",
     "type": "array",
     "items": {
         "type": "object",

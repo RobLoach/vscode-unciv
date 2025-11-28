@@ -1,5 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "TileResources",
+  "description": "A list of tile resources, including their types, improvements, and discovery requirements.",
   "type": "array",
   "items": {
       "type": "object",

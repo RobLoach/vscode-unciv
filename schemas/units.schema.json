@@ -1,5 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Units",
+    "description": "A list of units, including their stats, type, and abilities.",
   "type": "array",
   "items": {
       "type": "object",

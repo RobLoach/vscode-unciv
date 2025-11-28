@@ -1,5 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Policies",
+    "description": "A list of policies and policy trees available in the game.",
     "type": "array",
     "items": {
         "type": "object",

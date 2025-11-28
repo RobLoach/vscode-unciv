@@ -1,5 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "CityStateTypes",
+    "description": "A list of city state types, including their bonuses and color information.",
     "type": "array",
     "items": {
         "type": "object",

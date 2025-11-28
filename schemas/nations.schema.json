@@ -1,5 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Nations",
+    "description": "A list of nations, including their leaders, colors, and other attributes.",
   "type": "array",
   "items": {
       "type": "object",
