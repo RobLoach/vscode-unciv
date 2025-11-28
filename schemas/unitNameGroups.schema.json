@@ -18,9 +18,7 @@
       "uniques": { "$ref": "uniques.schema.json" },
       "civilopediaText": { "$ref": "civilopediaText.schema.json" }
     },
-    "required": [
-      "name"
-    ],
+    "required": ["name"],
     "additionalProperties": false
   }
 }

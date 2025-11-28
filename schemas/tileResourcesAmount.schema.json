@@ -1,11 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Tile Resource Amount",
-    "type": "object",
-    "properties": {
-        "sparse": { "type": "number" },
-        "default": { "type": "number" },
-        "abundant": { "type": "number" }
-    },
-    "required": ["sparse", "default", "abundant"]
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tile Resource Amount",
+  "type": "object",
+  "description": "Specifies the amount of resources on a tile, categorized as sparse, default, or abundant.",
+  "properties": {
+    "sparse": { "type": "number" },
+    "default": { "type": "number" },
+    "abundant": { "type": "number" }
+  },
+  "required": ["sparse", "default", "abundant"]
 }

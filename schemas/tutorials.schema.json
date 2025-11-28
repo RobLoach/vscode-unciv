@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Tutorials",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string", "description": "The Tutorial's entry name." },
+      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+      "steps": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "An array of step descriptions for the tutorial."
+      }
+    },
+    "required": ["name"],
+    "additionalProperties": false
+  }
+}

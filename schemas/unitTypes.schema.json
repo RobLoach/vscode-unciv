@@ -4,18 +4,16 @@
   "description": "A list of unit types, including their movement type and associated uniques.",
   "type": "array",
   "items": {
-      "type": "object",
-      "properties": {
-          "name": { "type": "string" },
-          "movementType": {
-              "enum": ["Land", "Water", "Air"]
-          },
-          "uniques": { "$ref": "uniques.schema.json" },
-          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "movementType": {
+        "enum": ["Land", "Water", "Air"]
       },
-      "required": [
-          "name", "movementType"
-      ],
-      "additionalProperties": false
+      "uniques": { "$ref": "uniques.schema.json" },
+      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    },
+    "required": ["name", "movementType"],
+    "additionalProperties": false
   }
 }

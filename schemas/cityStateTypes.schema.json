@@ -1,28 +1,26 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "CityStateTypes",
-    "description": "A list of city state types, including their bonuses and color information.",
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "name": { "type": "string" },
-            "friendBonusUniques": {
-                "$ref": "uniques.schema.json",
-                "description": "List of unique abilities granted to major civilizations when friends with this city state"
-            },
-            "allyBonusUniques": {
-                "$ref": "uniques.schema.json",
-                "description": "List of unique abilities granted to major civilizations when allied to city state"
-            },
-            "color": {
-                "$ref": "color.schema.json",
-                "description": "RGB color of text in civilopedia"
-            }
-        },
-        "required": [
-            "name"
-        ],
-        "additionalProperties": false
-    }
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "CityStateTypes",
+  "description": "A list of city state types, including their bonuses and color information.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "friendBonusUniques": {
+        "$ref": "uniques.schema.json",
+        "description": "List of unique abilities granted to major civilizations when friends with this city state"
+      },
+      "allyBonusUniques": {
+        "$ref": "uniques.schema.json",
+        "description": "List of unique abilities granted to major civilizations when allied to city state"
+      },
+      "color": {
+        "$ref": "color.schema.json",
+        "description": "RGB color of text in civilopedia"
+      }
+    },
+    "required": ["name"],
+    "additionalProperties": false
+  }
 }

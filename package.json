@@ -5,18 +5,19 @@
   "publisher": "robloach",
   "author": "Rob Loach",
   "license": "MIT",
-  "version": "0.1.4",
+  "version": "0.1.3",
   "icon": "icon.png",
   "private": true,
   "engines": {
     "vscode": "^1.106.1"
   },
   "scripts": {
-    "prebuild": "rm -rf *.vsix",
-    "build": "npx @vscode/vsce package",
-    "postbuild": "code --install-extension *.vsix",
-    "pub": "npx @vscode/vsce publish",
-    "test": ""
+     "prebuild": "rm -rf *.vsix node_modules && npm install --production",
+     "build": "npx @vscode/vsce package",
+     "postbuild": "code --install-extension *.vsix",
+     "pub": "npx @vscode/vsce publish",
+     "test": "",
+     "prettier": "npx prettier --write schemas/*.json"
   },
   "categories": [
     "Other"
@@ -83,6 +84,12 @@
       },
       {
         "fileMatch": [
+          "jsons/Eras.json"
+        ],
+        "url": "./schemas/eras.schema.json"
+      },
+      {
+        "fileMatch": [
           "jsons/Units.json"
         ],
         "url": "./schemas/units.schema.json"
@@ -116,6 +123,12 @@
           "jsons/Specialists.json"
         ],
         "url": "./schemas/specialists.schema.json"
+      },
+      {
+        "fileMatch": [
+          "jsons/Speeds.json"
+        ],
+        "url": "./schemas/speeds.schema.json"
       },
       {
         "fileMatch": [
@@ -155,9 +168,27 @@
       },
       {
         "fileMatch": [
+          "jsons/GlobalUniques.json"
+        ],
+        "url": "./schemas/globalUniques.schema.json"
+      },
+      {
+        "fileMatch": [
+          "jsons/ModOptions.json"
+        ],
+        "url": "./schemas/modOptions.schema.json"
+      },
+      {
+        "fileMatch": [
           "jsons/Terrains.json"
         ],
         "url": "./schemas/terrains.schema.json"
+      },
+      {
+        "fileMatch": [
+          "jsons/Tutorials.json"
+        ],
+        "url": "./schemas/tutorials.schema.json"
       },
       {
         "fileMatch": [
@@ -173,4 +204,8 @@
       }
     ]
   }
+    ,
+    "devDependencies": {
+      "prettier": "^3.1.0"
+    }
 }

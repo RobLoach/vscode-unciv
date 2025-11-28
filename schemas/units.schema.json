@@ -1,58 +1,100 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "Units",
-    "description": "A list of units, including their stats, type, and abilities.",
+  "title": "Units",
+  "description": "A list of units, including their stats, type, and abilities.",
   "type": "array",
   "items": {
-      "type": "object",
-      "properties": {
-          "name": { "type": "string" },
-          "unitType": { "type": "string" },
-
-          "movement": { "type": "integer" },
-
-          "strength": { "type": "integer" },
-          "rangedStrength": { "type": "integer" },
-          "religiousStrength": { "type": "number" },
-          "range": { "type": "integer" },
-          "interceptRange": { "type": "integer" },
-
-          "cost": { "type": "integer" },
-          "hurryCostModifier": { "type": "integer" },
-
-          "requiredResource": { "type": "string" },
-          "requiredTech": { "type": "string" },
-          "obsoleteTech": { "type": "string" },
-          "upgradesTo": { "type": "string" },
-
-          "uniqueTo": {
-              "type": "string",
-              "description": "Designates that only this nation can build this unit. Must be exact name of existing nation."
-          },
-          "replaces": {
-              "type": "string",
-              "description": "For unique units: the name of the original unit that this unit replaces for the uniqueTo nation."
-          },
-
-          "uniques": { "$ref": "uniques.schema.json" },
-
-          "promotions": {
-              "type": "array",
-              "items": { "type": "string" },
-              "uniqueItems": true,
-              "description": "Promotions that the unit gets on creation. Must be exact names of existing promotions."
-          },
-
-          "attackSound": { "type": "string" },
-          "replacementTextForUniques": {
-              "type": "string",
-              "description": "Freeform text that will be shown to users, overriding the list of uniques."
-          },
-          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "unitType": {
+        "type": "string",
+        "description": "The type of the unit. Must be in UnitTypes.json"
       },
-      "required": [
-          "name", "unitType"
-      ],
-      "additionalProperties": false
+
+      "movement": {
+        "type": "integer",
+        "description": "The amount of movement points the unit has by."
+      },
+
+      "strength": {
+        "type": "integer",
+        "description": "The melee attack and defensive strength of the unit. If this and rangedStrength are omitted or 0, the unit will be a civilian."
+      },
+      "rangedStrength": {
+        "type": "integer",
+        "description": "The ranged attack and defensive strength of the unit. If omitted, the unit cannot ranged attack. If used, strength must be set too."
+      },
+      "religiousStrength": {
+        "type": "number",
+        "description": "The religious attack and defensive strength of the unit."
+      },
+      "range": {
+        "type": "integer",
+        "description": "The range from which ranged attacks can be performed.",
+        "default": 2
+      },
+      "interceptRange": {
+        "type": "integer",
+        "description": "Air units attacking within this range will be intercepted."
+      },
+
+      "cost": {
+        "type": "integer",
+        "default": 0,
+        "description": "The amount of production required to build this unit. The production needed is always positive"
+      },
+      "hurryCostModifier": {
+        "type": "integer",
+        "description": "If this unit is bought for gold, its price is increased by so much percent"
+      },
+
+      "requiredResource": {
+        "type": "string",
+        "description": "Resource that is consumed by building this unit. Must be in TileResources.json"
+      },
+      "requiredTech": {
+        "type": "string",
+        "description": "The tech required to build this unit. Must be in Techs.json"
+      },
+      "obsoleteTech": {
+        "type": "string",
+        "description": "After researching this tech, the unit can no longer be build. Must be in Techs.json"
+      },
+      "upgradesTo": {
+        "type": "string",
+        "description": "Unit that this unit can upgrade to when it is available. Must be in Units.json"
+      },
+
+      "uniqueTo": {
+        "type": "string",
+        "description": "Designates that only this nation can build this unit. Must be exact name of existing nation."
+      },
+      "replaces": {
+        "type": "string",
+        "description": "For unique units: the name of the original unit that this unit replaces for the uniqueTo nation."
+      },
+
+      "uniques": { "$ref": "uniques.schema.json" },
+
+      "promotions": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true,
+        "description": "Promotions that the unit gets on creation. Must be exact names of existing promotions."
+      },
+
+      "attackSound": {
+        "type": "string",
+        "description": "The sound that is played when the unit attacks."
+      },
+      "replacementTextForUniques": {
+        "type": "string",
+        "description": "Freeform text that will be shown to users, overriding the list of uniques."
+      },
+      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    },
+    "required": ["name", "unitType"],
+    "additionalProperties": false
   }
 }

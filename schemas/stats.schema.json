@@ -1,16 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "Stats",
-    "description": "Object representing the main stats for a game entity, such as production, food, gold, science, culture, happiness, and faith.",
-    "type": "object",
-    "properties": {
-        "production": { "type": "number" },
-        "food": { "type": "number" },
-        "gold": { "type": "number" },
-        "science": { "type": "number" },
-        "culture": { "type": "number" },
-        "happiness": { "type": "number" },
-        "faith": { "type": "number" }
-    },
-    "additionalProperties": false
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Stats",
+  "description": "Object representing the main stats for a game entity, such as production, food, gold, science, culture, happiness, and faith.",
+  "type": "object",
+  "properties": {
+    "production": { "type": "number" },
+    "food": { "type": "number" },
+    "gold": { "type": "number" },
+    "science": { "type": "number" },
+    "culture": { "type": "number" },
+    "happiness": { "type": "number" },
+    "faith": { "type": "number" }
+  },
+  "additionalProperties": false
 }

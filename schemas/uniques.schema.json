@@ -1,19 +1,21 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "Uniques",
-    "type": "array",
-    "description": "A list of uniques to apply to the object. See https://yairm210.github.io/Unciv/Modders/uniques/",
-    "items": {
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Uniques",
+  "type": "array",
+  "description": "A list of uniques to apply to the object. See https://yairm210.github.io/Unciv/Modders/uniques/",
+  "items": {
+    "type": "string",
+    "description": "A unique that is applied to the object. See https://yairm210.github.io/Unciv/Modders/uniques/",
+    "$comment": "This should be allOf, though the current regex validation isn't quite complete for embedded conditionals.",
+    "anyOf": [
+      {
         "type": "string",
-        "anyOf": [
-            {
-                "type": "string",
-                "pattern": "^[^><]*(\\<[^>]*\\>[^><]*)*$"
-            },
-            {
-                "type": "string",
-                "pattern": "^[^\\[\\]]*(\\[[^\\[\\]]*\\][^\\[\\]]*)*$"
-            }
-        ]
-    }
+        "pattern": "^[^><]*(\\<[^>]*\\>[^><]*)*$"
+      },
+      {
+        "type": "string",
+        "pattern": "^[^\\[\\]]*(\\[[^\\[\\]]*\\][^\\[\\]]*)*$"
+      }
+    ]
+  }
 }

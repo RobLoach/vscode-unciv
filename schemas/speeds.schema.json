@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Speeds",
+  "description": "A list of available game speeds.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "turns"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of the speed"
+      },
+      "modifier": {
+        "type": "number",
+        "minimum": 0,
+        "default": 1.0,
+        "description": "Overall game speed modifier"
+      },
+      "productionCostModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales production cost of units and buildings"
+      },
+      "goldCostModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales gold costs"
+      },
+      "scienceCostModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales science costs"
+      },
+      "cultureCostModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales culture costs"
+      },
+      "faithCostModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales faith costs"
+      },
+      "improvementBuildLengthModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales the time it takes for a worker to build tile improvements"
+      },
+      "barbarianModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales the time between barbarian spawns"
+      },
+      "goldGiftModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales the influence gained from gifting gold to city-states"
+      },
+      "cityStateTributeScalingInterval": {
+        "type": "number",
+        "minimum": 0,
+        "default": 6.5,
+        "description": "Turns for city-state tribute scaling"
+      },
+      "goldenAgeLengthModifier": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Scales the length of golden ages"
+      },
+      "religiousPressureAdjacentCity": {
+        "type": "integer",
+        "minimum": 0,
+        "default": 6,
+        "description": "Religious pressure exerted on nearby cities"
+      },
+      "peaceDealDuration": {
+        "type": "integer",
+        "minimum": 0,
+        "default": 10,
+        "description": "Turns a peace deal lasts"
+      },
+      "dealDuration": {
+        "type": "integer",
+        "minimum": 0,
+        "default": 30,
+        "description": "Turns a non-peace deal lasts"
+      },
+      "startYear": {
+        "type": "number",
+        "default": -4000,
+        "description": "Start year of the game"
+      },
+      "turns": {
+        "type": "array",
+        "description": "List of time intervals per turn. Each object defines the years per turn and the turn interval.",
+        "items": {
+          "type": "object",
+          "required": ["yearsPerTurn", "untilTurn"],
+          "properties": {
+            "yearsPerTurn": {
+              "type": "number",
+              "description": "Number of years passing between turns"
+            },
+            "untilTurn": {
+              "type": "integer",
+              "description": "End of this interval (if it is the last object, only used for Era.startPercent)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "uniques": { "$ref": "uniques.schema.json" }
+    },
+    "additionalProperties": false
+  }
+}

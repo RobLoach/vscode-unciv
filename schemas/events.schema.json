@@ -4,31 +4,39 @@
   "description": "A list of game events, including triggers, choices, and presentation details.",
   "type": "array",
   "items": {
-      "type": "object",
-      "properties": {
-          "name": { "type": "string", "description": "Used for triggering via 'Triggers a [event] event' unique" },
-          "text": { "type": "string", "description": "Flavor text displayed to user" },
-          "presentation": { "enum": ["None", "Alert", "Floating"], "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators" },
-          "uniques": { "$ref": "uniques.schema.json" },
-          "civilopediaText": { "$ref": "civilopediaText.schema.json" },
-          
-          "choices": {
-              "type": "array",
-              "items": {
-                  "properties": {
-                      "text": { "type": "string" },
-                      "uniques": { "$ref": "uniques.schema.json" },
-                      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
-                      "keyShortcut": { "type": "string" }
-                  },
-                  "required": ["text", "uniques"],
-                  "additionalProperties": false
-              }
-          }
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Used for triggering via 'Triggers a [event] event' unique"
       },
-      "required": [
-          "name"
-      ],
-      "additionalProperties": false
+      "text": {
+        "type": "string",
+        "description": "Flavor text displayed to user"
+      },
+      "presentation": {
+        "enum": ["None", "Alert", "Floating"],
+        "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators"
+      },
+      "uniques": { "$ref": "uniques.schema.json" },
+      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+
+      "choices": {
+        "type": "array",
+        "description": "User can choose to trigger one of the viable choices",
+        "items": {
+          "properties": {
+            "text": { "type": "string" },
+            "uniques": { "$ref": "uniques.schema.json" },
+            "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+            "keyShortcut": { "type": "string" }
+          },
+          "required": ["text", "uniques"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["name"],
+    "additionalProperties": false
   }
 }

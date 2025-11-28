@@ -4,57 +4,55 @@
   "description": "A list of technologies, including their costs, prerequisites, and effects.",
   "type": "array",
   "items": {
-      "type": "object",
-      "properties": {
-          "columnNumber": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "The number of this column in the techs matrix - 0 being the leftmost column"
-          },
-          "era": { "type": "string" },
-          "techCost": { "type": "integer" },
-          "buildingCost": { "type": "integer" },
-          "wonderCost": { "type": "integer" },
-          "techs": {
-              "type": "array",
-              "items": {
-                  "type": "object",
-                  "properties": {
-                      "name":  { "type": "string" },
-                      "row":  {
-                          "type": "integer",
-                          "minimum": 1,
-                          "description": "The row, within the column, where this tech appears - 1 being the topmost tech"
-                      },
-                      "cost":  {
-                          "type": "integer",
-                          "description": "Science cost of this tech - overrides the column techCost"
-                      },
-                      "uniques":  { "$ref": "uniques.schema.json" },
-                      "prerequisites": {
-                          "type": "array",
-                          "items": { "type": "string" },
-                          "description": "The names of techs which must be researched before this tech can be researched",
-                          "uniqueItems": true
-                      },
-                      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
-                      "quote":  {
-                          "type": "string",
-                          "description": "The quote that is displayed when you have researched the tech - flavor text"
-                      }
-                  },
-                  "required": ["name", "row"],
-                  "additionalProperties": false
-              }
-          },
-
-          "uniques": { "$ref": "uniques.schema.json" },
-
-          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    "type": "object",
+    "properties": {
+      "columnNumber": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "The number of this column in the techs matrix - 0 being the leftmost column"
       },
-      "required": [
-          "columnNumber", "era"
-      ],
-      "additionalProperties": false
+      "era": { "type": "string" },
+      "techCost": { "type": "integer" },
+      "buildingCost": { "type": "integer" },
+      "wonderCost": { "type": "integer" },
+      "techs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "row": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "The row, within the column, where this tech appears - 1 being the topmost tech"
+            },
+            "cost": {
+              "type": "integer",
+              "description": "Science cost of this tech - overrides the column techCost"
+            },
+            "uniques": { "$ref": "uniques.schema.json" },
+            "prerequisites": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "The names of techs which must be researched before this tech can be researched",
+              "uniqueItems": true
+            },
+            "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+            "quote": {
+              "type": "string",
+              "description": "The quote that is displayed when you have researched the tech - flavor text"
+            }
+          },
+          "required": ["name", "row"],
+          "additionalProperties": false
+        }
+      },
+
+      "uniques": { "$ref": "uniques.schema.json" },
+
+      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    },
+    "required": ["columnNumber", "era"],
+    "additionalProperties": false
   }
 }

@@ -4,38 +4,35 @@
   "description": "A list of tile improvements, including build requirements and effects.",
   "type": "array",
   "items": {
-      "type": "object",
-      "properties": {
-          "name": { "type": "string" },
-          "terrainsCanBeBuiltOn": {
-              "type": "array",
-              "items": { "type": "string" },
-              "uniqueItems": true
-          },
-          "turnsToBuild": { "type": "integer" },
-          "techRequired": { "type": "string" },
-          "replaces": { "type": "string" },
-          "uniqueTo": { "type": "string" },
-          "shortcutKey": {
-              "type": "string",
-              "maxLength": 1
-          },
-
-          "production": { "type": "number" },
-          "food": { "type": "number" },
-          "gold": { "type": "number" },
-          "science": { "type": "number" },
-          "culture": { "type": "number" },
-          "happiness": { "type": "number" },
-          "faith": { "type": "number" },
-
-          "uniques": { "$ref": "uniques.schema.json" },
-
-          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "terrainsCanBeBuiltOn": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true
       },
-      "required": [
-          "name"
-      ],
-      "additionalProperties": false
+      "turnsToBuild": { "type": "integer" },
+      "techRequired": { "type": "string" },
+      "replaces": { "type": "string" },
+      "uniqueTo": { "type": "string" },
+      "shortcutKey": {
+        "type": "string",
+        "maxLength": 1
+      },
+
+      "production": { "type": "number" },
+      "food": { "type": "number" },
+      "gold": { "type": "number" },
+      "science": { "type": "number" },
+      "culture": { "type": "number" },
+      "happiness": { "type": "number" },
+      "faith": { "type": "number" },
+
+      "uniques": { "$ref": "uniques.schema.json" },
+      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+    },
+    "required": ["name"],
+    "additionalProperties": false
   }
 }

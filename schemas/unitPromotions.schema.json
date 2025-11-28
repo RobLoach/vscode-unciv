@@ -1,31 +1,41 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "UnitPromotions",
-    "description": "A list of unit promotions, including prerequisites and effects.",
+  "title": "UnitPromotions",
+  "description": "A list of unit promotions, including prerequisites and effects.",
   "type": "array",
   "items": {
-      "type": "object",
-      "properties": {
-          "name": { "type": "string" },
-          "prerequisites": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
-          "unitTypes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
-          
-          "row": { "type": "integer", "minimum": 0,
-              "description": "Used as **column** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution."
-          },
-          "column": { "type": "integer", "minimum": 0,
-              "description": "Used as **row** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution."
-          },
-
-          "uniques": { "$ref": "uniques.schema.json" },
-          "civilopediaText": { "$ref": "civilopediaText.schema.json" },
-          
-          "outerColor": { "$ref": "color.schema.json" },
-          "innerColor": { "$ref": "color.schema.json" }
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "prerequisites": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true
       },
-      "required": [
-          "name"
-      ],
-      "additionalProperties": false
+      "unitTypes": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true
+      },
+
+      "row": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Used as **column** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution."
+      },
+      "column": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Used as **row** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution."
+      },
+
+      "uniques": { "$ref": "uniques.schema.json" },
+      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+
+      "outerColor": { "$ref": "color.schema.json" },
+      "innerColor": { "$ref": "color.schema.json" }
+    },
+    "required": ["name"],
+    "additionalProperties": false
   }
 }
