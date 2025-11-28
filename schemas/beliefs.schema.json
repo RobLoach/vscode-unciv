@@ -1,19 +1,33 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "type": "array",
-  "items": {
-      "type": "object",
-      "properties": {
-          "name": { "type": "string" },
-          "type": {
-              "enum": ["Pantheon", "Founder", "Follower", "Enhancer"]
-          },
-          "uniques": { "$ref": "uniques.schema.json" },
-          "civilopediaText": { "$ref": "civilopediaText.schema.json" }
-      },
-      "required": [
-          "name", "type"
-      ],
-      "additionalProperties": false
-  }
+    "$schema":"http://json-schema.org/draft-07/schema",
+    "title":"Beliefs",
+    "description":"Beliefs that can be chosen for religions.",
+    "type":"array",
+    "items":{
+        "type":"object",
+        "properties":{
+            "name":{
+                "type":"string"
+            },
+            "type":{
+                "enum":[
+                    "Pantheon",
+                    "Founder",
+                    "Follower",
+                    "Enhancer"
+                ]
+            },
+            "uniques":{
+                "$ref":"uniques.schema.json"
+            },
+            "civilopediaText":{
+                "$ref":"civilopediaText.schema.json"
+            }
+        },
+        "required":[
+            "name",
+            "type"
+        ],
+        "additionalProperties":false
+    }
 }
