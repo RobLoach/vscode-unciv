@@ -6,31 +6,73 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string" },
+      "name": {
+        "type": "string",
+        "description": "The name of the tile improvement."
+      },
       "terrainsCanBeBuiltOn": {
         "type": "array",
         "items": { "type": "string" },
-        "uniqueItems": true
+        "uniqueItems": true,
+        "description": "Terrains that this improvement can be built on. Removable terrain features will need to be removed before building an improvement. Must be in Terrains.json"
       },
-      "turnsToBuild": { "type": "integer" },
-      "techRequired": { "type": "string" },
-      "replaces": { "type": "string" },
-      "uniqueTo": { "type": "string" },
+      "turnsToBuild": {
+        "type": "integer",
+        "description": "Number of turns a worker spends building this. If -1, the improvement is unbuildable [^D]. If 0, the improvement is always built in one turn"
+      },
+      "techRequired": {
+        "type": "string",
+        "description": "The name of the technology required to build this improvement"
+      },
+      "replaces": {
+        "type": "string",
+        "description": "The name of a improvement that should be replaced by this improvement. Must be in TileImprovements.json"
+      },
+      "uniqueTo": {
+        "type": "string",
+        "description": "The name of the nation this improvement is unique for"
+      },
       "shortcutKey": {
         "type": "string",
-        "maxLength": 1
+        "maxLength": 1,
+        "description": "Keyboard shortcut key for this improvement (single character)."
       },
 
-      "production": { "type": "number" },
-      "food": { "type": "number" },
-      "gold": { "type": "number" },
-      "science": { "type": "number" },
-      "culture": { "type": "number" },
-      "happiness": { "type": "number" },
-      "faith": { "type": "number" },
+      "production": {
+        "type": "number",
+        "description": "Per-turn bonus Production yield for the tile"
+      },
+      "food": {
+        "type": "number",
+        "description": "Per-turn bonus Food yield for the tile"
+      },
+      "gold": {
+        "type": "number",
+        "description": "Per-turn bonus Gold yield for the tile"
+      },
+      "science": {
+        "type": "number",
+        "description": "Per-turn bonus Science yield for the tile"
+      },
+      "culture": {
+        "type": "number",
+        "description": "Per-turn bonus Culture yield for the tile"
+      },
+      "happiness": {
+        "type": "number",
+        "description": "Happiness provieded for the tile"
+      },
+      "faith": {
+        "type": "number",
+        "description": "Per-turn bonus Faith yield for the tile"
+      },
 
-      "uniques": { "$ref": "uniques.schema.json" },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+      "uniques": {
+        "$ref": "uniques.schema.json"
+      },
+      "civilopediaText": {
+        "$ref": "civilopediaText.schema.json"
+      }
     },
     "required": ["name"],
     "additionalProperties": false

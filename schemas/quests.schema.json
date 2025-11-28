@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Quests",
+  "description": "Schema for quests given to major civilizations by city states.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "description"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Defines criteria of quest. Must be one of the predefined names for behavior."
+      },
+      "description": {
+        "type": "string",
+        "description": "Description of the quest shown to players."
+      },
+      "type": {
+        "type": "string",
+        "enum": ["Individual", "Global"],
+        "description": "Individual or Global quest."
+      },
+      "influence": {
+        "type": "number",
+        "default": 40,
+        "description": "Influence reward gained on quest completion."
+      },
+      "duration": {
+        "type": "integer",
+        "default": 0,
+        "description": "Maximum number of turns to complete the quest. 0 means no turn limit."
+      },
+      "minimumCivs": {
+        "type": "integer",
+        "default": 1,
+        "description": "Minimum number of Civs needed to start the quest. Only meaningful for type = Global."
+      },
+      "weightForCityStateType": {
+        "type": "object",
+        "description": "Relative weight multiplier for each city state type or personality.",
+        "additionalProperties": {
+          "type": "number"
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}

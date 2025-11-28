@@ -14,7 +14,7 @@
   "scripts": {
      "prebuild": "rm -rf *.vsix node_modules && npm install --production",
      "build": "npx @vscode/vsce package",
-     "postbuild": "code --install-extension *.vsix",
+     "postbuild": "code --install-extension *.vsix --force",
      "pub": "npx @vscode/vsce publish",
      "test": "",
      "prettier": "npx prettier --write schemas/*.json"
@@ -111,6 +111,12 @@
           "jsons/Policies.json"
         ],
         "url": "./schemas/policies.schema.json"
+      },
+      {
+        "fileMatch": [
+          "jsons/Quests.json"
+        ],
+        "url": "./schemas/quests.schema.json"
       },
       {
         "fileMatch": [

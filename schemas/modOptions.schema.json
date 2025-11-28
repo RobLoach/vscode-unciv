@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ModOptions",
-  "description": "Schema for Unciv mod options. Controls declarative mod compatibility and mod-wide settings.",
+  "title": "Mod Options",
+  "description": "Controls declarative mod compatibility and mod-wide settings.",
   "type": "object",
   "properties": {
     "isBaseRuleset": {

@@ -40,8 +40,15 @@
       "uniques": { "$ref": "uniques.schema.json" },
       "civilopediaText": { "$ref": "civilopediaText.schema.json" },
 
-      "requiredTech": { "type": "string", "description": "The tech that should be researched before this building may be built. Must be in Techs.json" },
-      "cost": { "type": "integer", "default": -1, "description": "Amount of production required to build the building. If -1, the buildingCost from requiredTech column is used" },
+      "requiredTech": {
+        "type": "string",
+        "description": "The tech that should be researched before this building may be built. Must be in Techs.json"
+      },
+      "cost": {
+        "type": "integer",
+        "default": -1,
+        "description": "Amount of production required to build the building. If -1, the buildingCost from requiredTech column is used"
+      },
       "maintenance": {
         "type": "integer",
         "description": "Gold upkeep per turn for this building"
@@ -57,11 +64,26 @@
         "additionalProperties": { "type": "integer" },
         "description": "Which Great Person Points this building generates per turn. Key must be name of Great Person unit."
       },
-      "hurryCostModifier": { "type": "number", "description": "When this building is bought using gold or faith, the price is increased by this much percent" },
-      "isWonder": { "type": "boolean", "description": "Whether this building is a global wonder" },
-      "isNationalWonder": { "type": "boolean", "description": "Whether this building is a national wonder" },
-      "requiredBuilding": { "type": "string", "description": "A building that has to be built before this building can be built. Must be in Buildings.json" },
-      "requiredResource": { "type": "string", "description": "The resource that is consumed when building this building. Must be in TileResources.json" },
+      "hurryCostModifier": {
+        "type": "number",
+        "description": "When this building is bought using gold or faith, the price is increased by this much percent"
+      },
+      "isWonder": {
+        "type": "boolean",
+        "description": "Whether this building is a global wonder"
+      },
+      "isNationalWonder": {
+        "type": "boolean",
+        "description": "Whether this building is a national wonder"
+      },
+      "requiredBuilding": {
+        "type": "string",
+        "description": "A building that has to be built before this building can be built. Must be in Buildings.json"
+      },
+      "requiredResource": {
+        "type": "string",
+        "description": "The resource that is consumed when building this building. Must be in TileResources.json"
+      },
       "requiredNearbyImprovedResources": {
         "type": "array",
         "items": { "type": "string" },
