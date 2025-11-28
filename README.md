@@ -2,6 +2,11 @@
 
 [Visual Studio Code](https://code.visualstudio.com/) extension to provide validation for [Unciv](https://github.com/yairm210/Unciv) mods. It automatically checks your Unciv JSON syntax errors and common mistakes, helping you catch issues early.
 
+## Features
+
+- JSONC file association for Unciv files
+- Unciv JSON Schema Validation
+
 ## Installation
 
 In Visual Studio Code open the command palette using Ctrl + P, paste the following command, and press Enter.
