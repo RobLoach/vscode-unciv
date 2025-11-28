@@ -61,7 +61,7 @@
           "civilopediaText": { "$ref": "civilopediaText.schema.json" }
       },
       "required": [
-          "name", "outerColor", "cities"
+          "name", "outerColor"
       ],
       "additionalProperties": false
   }
