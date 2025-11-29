@@ -6,16 +6,6 @@
   "items": {
     "type": "string",
     "description": "A unique that is applied to the object. See https://yairm210.github.io/Unciv/Modders/uniques/",
-    "$comment": "This should be allOf, though the current regex validation isn't quite complete for embedded conditionals.",
-    "anyOf": [
-      {
-        "type": "string",
-        "pattern": "^[^><]*(\\<[^>]*\\>[^><]*)*$"
-      },
-      {
-        "type": "string",
-        "pattern": "^[^\\[\\]]*(\\[[^\\[\\]]*\\][^\\[\\]]*)*$"
-      }
-    ]
+    "$comment": "TODO: Add a `allOf` condition to validate the uniques."
   }
 }

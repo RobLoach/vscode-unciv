@@ -23,7 +23,7 @@
         "items": { "type": "string" },
         "uniqueItems": true
       },
-      "improvementStats": { "$ref": "stats.schema.json" },
+      "improvementStats": { "$ref": "Stats.schema.json" },
 
       "production": { "type": "number" },
       "food": { "type": "number" },
@@ -33,11 +33,11 @@
       "happiness": { "type": "number" },
       "faith": { "type": "number" },
 
-      "majorDepositAmount": { "$ref": "tileResourcesAmount.schema.json" },
-      "minorDepositAmount": { "$ref": "tileResourcesAmount.schema.json" },
+      "majorDepositAmount": { "$ref": "TileResourcesAmount.schema.json" },
+      "minorDepositAmount": { "$ref": "TileResourcesAmount.schema.json" },
 
-      "uniques": { "$ref": "uniques.schema.json" },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "required": ["name"],
     "additionalProperties": false

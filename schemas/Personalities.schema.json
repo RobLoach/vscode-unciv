@@ -77,8 +77,8 @@
         "additionalProperties": true
       },
 
-      "uniques": { "$ref": "uniques.schema.json" },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "required": ["name"],
     "additionalProperties": false

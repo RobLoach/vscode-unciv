@@ -7,7 +7,7 @@
     "type": "object",
     "properties": {
       "name": {
-        "type": "string",
+        "type": "string", "title": "Name",
         "description": "Used for triggering via 'Triggers a [event] event' unique"
       },
       "text": {
@@ -18,8 +18,8 @@
         "enum": ["None", "Alert", "Floating"],
         "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators"
       },
-      "uniques": { "$ref": "uniques.schema.json" },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
 
       "choices": {
         "type": "array",
@@ -27,8 +27,8 @@
         "items": {
           "properties": {
             "text": { "type": "string" },
-            "uniques": { "$ref": "uniques.schema.json" },
-            "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+            "uniques": { "$ref": "Uniques.schema.json" },
+            "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
             "keyShortcut": { "type": "string" }
           },
           "required": ["text", "uniques"],

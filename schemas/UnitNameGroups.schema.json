@@ -15,8 +15,8 @@
         "description": "A list of names that apply to the group. For example: Alan Turing.",
         "items": { "type": "string" }
       },
-      "uniques": { "$ref": "uniques.schema.json" },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "required": ["name"],
     "additionalProperties": false

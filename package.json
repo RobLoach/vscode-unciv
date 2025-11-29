@@ -5,7 +5,7 @@
   "publisher": "robloach",
   "author": "Rob Loach",
   "license": "MIT",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "icon": "icon.png",
   "private": true,
   "engines": {
@@ -31,6 +31,12 @@
     "url": "https://github.com/robloach/vscode-unciv.git"
   },
   "contributes": {
+    "snippets": [
+      {
+        "language": "jsonc",
+        "path": "./snippets.json"
+      }
+    ],
     "configurationDefaults": {
       "files.associations": {
         "Beliefs.json": "jsonc",
@@ -68,145 +74,151 @@
         "fileMatch": [
           "jsons/Beliefs.json"
         ],
-        "url": "./schemas/beliefs.schema.json"
+        "url": "./schemas/Beliefs.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Buildings.json"
         ],
-        "url": "./schemas/buildings.schema.json"
+        "url": "./schemas/Buildings.schema.json"
       },
       {
         "fileMatch": [
           "jsons/CityStateTypes.json"
         ],
-        "url": "./schemas/cityStateTypes.schema.json"
+        "url": "./schemas/CityStateTypes.schema.json"
+      },
+      {
+        "fileMatch": [
+          "jsons/Difficulties.json"
+        ],
+        "url": "./schemas/Difficulties.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Eras.json"
         ],
-        "url": "./schemas/eras.schema.json"
+        "url": "./schemas/Eras.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Units.json"
         ],
-        "url": "./schemas/units.schema.json"
+        "url": "./schemas/Units.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Nations.json"
         ],
-        "url": "./schemas/nations.schema.json"
+        "url": "./schemas/Nations.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Personalities.json"
         ],
-        "url": "./schemas/personalities.schema.json"
+        "url": "./schemas/Personalities.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Policies.json"
         ],
-        "url": "./schemas/policies.schema.json"
+        "url": "./schemas/Policies.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Quests.json"
         ],
-        "url": "./schemas/quests.schema.json"
+        "url": "./schemas/Quests.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Religions.json"
         ],
-        "url": "./schemas/religions.schema.json"
+        "url": "./schemas/Religions.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Specialists.json"
         ],
-        "url": "./schemas/specialists.schema.json"
+        "url": "./schemas/Specialists.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Speeds.json"
         ],
-        "url": "./schemas/speeds.schema.json"
+        "url": "./schemas/Speeds.schema.json"
       },
       {
         "fileMatch": [
           "jsons/TileImprovements.json"
         ],
-        "url": "./schemas/tileImprovements.schema.json"
+        "url": "./schemas/TileImprovements.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Techs.json"
         ],
-        "url": "./schemas/techs.schema.json"
+        "url": "./schemas/Techs.schema.json"
       },
       {
         "fileMatch": [
           "jsons/UnitTypes.json"
         ],
-        "url": "./schemas/unitTypes.schema.json"
+        "url": "./schemas/UnitTypes.schema.json"
       },
       {
         "fileMatch": [
           "jsons/UnitPromotions.json"
         ],
-        "url": "./schemas/unitPromotions.schema.json"
+        "url": "./schemas/UnitPromotions.schema.json"
       },
       {
         "fileMatch": [
           "jsons/TileResources.json"
         ],
-        "url": "./schemas/tileResources.schema.json"
+        "url": "./schemas/TileResources.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Events.json"
         ],
-        "url": "./schemas/events.schema.json"
+        "url": "./schemas/Events.schema.json"
       },
       {
         "fileMatch": [
           "jsons/GlobalUniques.json"
         ],
-        "url": "./schemas/globalUniques.schema.json"
+        "url": "./schemas/GlobalUniques.schema.json"
       },
       {
         "fileMatch": [
           "jsons/ModOptions.json"
         ],
-        "url": "./schemas/modOptions.schema.json"
+        "url": "./schemas/ModOptions.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Terrains.json"
         ],
-        "url": "./schemas/terrains.schema.json"
+        "url": "./schemas/Terrains.schema.json"
       },
       {
         "fileMatch": [
           "jsons/Tutorials.json"
         ],
-        "url": "./schemas/tutorials.schema.json"
+        "url": "./schemas/Tutorials.schema.json"
       },
       {
         "fileMatch": [
           "jsons/UnitNameGroups.json"
         ],
-        "url": "./schemas/unitNameGroups.schema.json"
+        "url": "./schemas/UnitNameGroups.schema.json"
       },
       {
         "fileMatch": [
           "jsons/VictoryTypes.json"
         ],
-        "url": "./schemas/victoryTypes.schema.json"
+        "url": "./schemas/VictoryTypes.schema.json"
       }
     ]
   }

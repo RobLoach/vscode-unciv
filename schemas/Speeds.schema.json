@@ -110,7 +110,7 @@
           "additionalProperties": false
         }
       },
-      "uniques": { "$ref": "uniques.schema.json" }
+      "uniques": { "$ref": "Uniques.schema.json" }
     },
     "additionalProperties": false
   }

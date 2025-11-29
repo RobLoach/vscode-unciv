@@ -8,7 +8,7 @@
       "type": "boolean",
       "description": "Replaces vanilla ruleset if true."
     },
-    "uniques": { "$ref": "uniques.schema.json" },
+    "uniques": { "$ref": "Uniques.schema.json" },
     "techsToRemove": {
       "type": "array",
       "items": { "type": "string" },

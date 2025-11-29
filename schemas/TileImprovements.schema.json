@@ -68,10 +68,10 @@
       },
 
       "uniques": {
-        "$ref": "uniques.schema.json"
+        "$ref": "Uniques.schema.json"
       },
       "civilopediaText": {
-        "$ref": "civilopediaText.schema.json"
+        "$ref": "CivilopediaText.schema.json"
       }
     },
     "required": ["name"],

@@ -28,7 +28,7 @@
         "description": "If true, nothing can be built here - not even resource improvements"
       },
 
-      "RGB": { "$ref": "color.schema.json" },
+      "RGB": { "$ref": "Color.schema.json" },
 
       "occursOn": {
         "type": "array",
@@ -49,9 +49,9 @@
         "description": "For natural wonders - the chance this nat wonder will be picked"
       },
 
-      "uniques": { "$ref": "uniques.schema.json" },
+      "uniques": { "$ref": "Uniques.schema.json" },
 
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "required": ["name", "type"],
     "additionalProperties": false

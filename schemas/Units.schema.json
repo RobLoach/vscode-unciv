@@ -75,7 +75,7 @@
         "description": "For unique units: the name of the original unit that this unit replaces for the uniqueTo nation."
       },
 
-      "uniques": { "$ref": "uniques.schema.json" },
+      "uniques": { "$ref": "Uniques.schema.json" },
 
       "promotions": {
         "type": "array",
@@ -92,7 +92,7 @@
         "type": "string",
         "description": "Freeform text that will be shown to users, overriding the list of uniques."
       },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "required": ["name", "unitType"],
     "additionalProperties": false

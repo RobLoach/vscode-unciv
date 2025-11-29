@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Difficulties",
+  "description": "Lists all the available Difficulties.",
+  "type": "array",
+  "items": {
+    "title": "Difficulty",
+    "description": "A Difficulty that will be available to the Ruleset.",
+    "type": "object",
+    "required": ["name"],
+    "properties": {
+      "name": { "type": "string" },
+      "baseHappiness": { "type": "integer", "default": 0 },
+      "extraHappinessPerLuxury": { "type": "number", "default": 0 },
+      "researchCostModifier": { "type": "number", "default": 1 },
+      "unitCostModifier": { "type": "number", "default": 1 },
+      "unitSupplyBase": { "type": "integer", "default": 5 },
+      "unitSupplyPerCity": { "type": "integer", "default": 2 },
+      "buildingCostModifier": { "type": "number", "default": 1 },
+      "policyCostModifier": { "type": "number", "default": 1 },
+      "unhappinessModifier": { "type": "number", "default": 1 },
+      "barbarianBonus": { "type": "number", "default": 0 },
+      "barbarianSpawnDelay": { "type": "integer", "default": 0 },
+      "playerBonusStartingUnits": {
+        "type": "array",
+        "items": { "type": "string" },
+        "default": [],
+        "description": "Can also be 'Era Starting Unit', maps to startingMilitaryUnit of the Eras file. All other units must be in Units.json. Applies only to human player civs"
+      },
+      "aiDifficultyLevel": { "type": "string", "default": "", "description": "Applies some modifiers to the AI from the chosen difficulty. Modifiers such as unhappinessModifier and aiUnhappinessModifier stack multiplicatively. If empty: defaults to Chieftain, or the first available difficulty." },
+      "aiCityGrowthModifier": { "type": "number", "default": 1 },
+      "aiUnitCostModifier": { "type": "number", "default": 1 },
+      "aiBuildingCostModifier": { "type": "number", "default": 1 },
+      "aiWonderCostModifier": { "type": "number", "default": 1 },
+      "aiBuildingMaintenanceModifier": { "type": "number", "default": 1 },
+      "aiUnitMaintenanceModifier": { "type": "number", "default": 1 },
+      "aiUnitSupplyModifier": { "type": "integer", "default": 5 },
+      "aiFreeTechs": {
+        "type": "array",
+        "items": { "type": "string" },
+        "default": []
+      },
+      "aiMajorCivBonusStartingUnits": {
+        "type": "array",
+        "items": { "type": "string" },
+        "default": []
+      },
+      "aiCityStateBonusStartingUnits": {
+        "type": "array",
+        "items": { "type": "string" },
+        "default": []
+      },
+      "aiUnhappinessModifier": { "type": "number", "default": 1 },
+      "turnBarbariansCanEnterPlayerTiles": { "type": "integer", "default": 0 },
+      "clearBarbarianCampReward": { "type": "integer", "default": 25 },
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+    },
+    "additionalProperties": false
+  }
+}

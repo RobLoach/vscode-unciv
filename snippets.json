@@ -1,0 +1,37 @@
+{
+	"Unciv Building": {
+		"scope": "jsonc",
+    "body": [
+      "{",
+      "    \"name\": \"${1:name}\",",
+      "    \"cost\": ${2:-1},",
+      "    \"production\": ${3:0},",
+      "    \"food\": ${4:0},",
+      "    \"gold\": ${5:0},",
+      "    \"science\": ${6:0},",
+      "    \"culture\": ${7:0},",
+      "    \"happiness\": ${8:0},",
+      "    \"faith\": ${9:0},",
+      "    \"maintenance\": ${10:0},",
+      "    \"isWonder\": ${11:false},",
+      "    \"isNationalWonder\": ${12:false},",
+      "    \"requiredBuilding\": \"${13:}\",",
+      "    \"requiredTech\": \"${14:}\",",
+      "    \"requiredResource\": \"${15:}\",",
+      "    \"requiredNearbyImprovedResources\": [${16:}],",
+      "    \"replaces\": \"${17:}\",",
+      "    \"uniqueTo\": \"${18:}\",",
+      "    \"cityStrength\": ${19:0},",
+      "    \"cityHealth\": ${20:0},",
+      "    \"hurryCostModifier\": ${21:0},",
+      "    \"quote\": \"${22:}\",",
+      "    \"uniques\": [${23:}],",
+      "    \"percentStatBonus\": {${25:}},",
+      "    \"greatPersonPoints\": {${26:}},",
+      "    \"specialistSlots\": {${27:}},",
+      "    \"civilopediaText\": [${28:}]",
+      "}"
+    ],
+		"description": "Add an individual Unciv Building to the list."
+	}
+}

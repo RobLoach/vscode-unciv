@@ -37,7 +37,7 @@
         "description": "Amount of faith provided by this specialist per turn."
       },
 
-      "color": { "$ref": "color.schema.json" },
+      "color": { "$ref": "Color.schema.json" },
 
       "greatPersonPoints": {
         "type": "object",

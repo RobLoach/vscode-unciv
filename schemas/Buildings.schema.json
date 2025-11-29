@@ -6,7 +6,7 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string" },
+      "name": { "type": "string", "title": "Name" },
 
       "production": {
         "type": "number",
@@ -37,8 +37,8 @@
         "description": "Faith yield provided by this building per turn"
       },
 
-      "uniques": { "$ref": "uniques.schema.json" },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
 
       "requiredTech": {
         "type": "string",
@@ -53,7 +53,7 @@
         "type": "integer",
         "description": "Gold upkeep per turn for this building"
       },
-      "percentStatBonus": { "$ref": "stats.schema.json" },
+      "percentStatBonus": { "$ref": "Stats.schema.json" },
       "specialistSlots": {
         "type": "object",
         "additionalProperties": { "type": "integer" },

@@ -6,14 +6,16 @@
   "properties": {
     "name": {
       "type": "string",
+      "title": "Name",
+      "default": "GlobalUniques",
       "description": "The name field is not used, but still must be set (the Ruleset validator might display it)."
     },
     "uniques": {
-      "$ref": "uniques.schema.json",
+      "$ref": "Uniques.schema.json",
       "description": "List of unique abilities that apply globally."
     },
     "unitUniques": {
-      "$ref": "uniques.schema.json",
+      "$ref": "Uniques.schema.json",
       "description": "List of unique abilities that apply to each unit."
     }
   },

@@ -7,16 +7,17 @@
     "type": "object",
     "properties": {
       "name": {
-        "type": "string"
+        "type": "string",
+        "title": "Name"
       },
       "type": {
         "enum": ["Pantheon", "Founder", "Follower", "Enhancer"]
       },
       "uniques": {
-        "$ref": "uniques.schema.json"
+        "$ref": "Uniques.schema.json"
       },
       "civilopediaText": {
-        "$ref": "civilopediaText.schema.json"
+        "$ref": "CivilopediaText.schema.json"
       }
     },
     "required": ["name", "type"],

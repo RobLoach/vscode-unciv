@@ -30,14 +30,14 @@
               "type": "integer",
               "description": "Science cost of this tech - overrides the column techCost"
             },
-            "uniques": { "$ref": "uniques.schema.json" },
+            "uniques": { "$ref": "Uniques.schema.json" },
             "prerequisites": {
               "type": "array",
               "items": { "type": "string" },
               "description": "The names of techs which must be researched before this tech can be researched",
               "uniqueItems": true
             },
-            "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+            "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
             "quote": {
               "type": "string",
               "description": "The quote that is displayed when you have researched the tech - flavor text"
@@ -48,9 +48,9 @@
         }
       },
 
-      "uniques": { "$ref": "uniques.schema.json" },
+      "uniques": { "$ref": "Uniques.schema.json" },
 
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "required": ["columnNumber", "era"],
     "additionalProperties": false

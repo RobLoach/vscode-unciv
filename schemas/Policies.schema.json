@@ -16,8 +16,8 @@
         "description": "Priorities for each victory type.",
         "additionalProperties": true
       },
-      "uniques": { "$ref": "uniques.schema.json" },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
 
       "policies": {
         "type": "array",
@@ -41,8 +41,8 @@
               "description": "List of prerequisite policy names",
               "uniqueItems": true
             },
-            "uniques": { "$ref": "uniques.schema.json" },
-            "civilopediaText": { "$ref": "civilopediaText.schema.json" }
+            "uniques": { "$ref": "Uniques.schema.json" },
+            "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
           },
           "required": ["name"]
         },

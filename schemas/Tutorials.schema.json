@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
       "name": { "type": "string", "description": "The Tutorial's entry name." },
-      "civilopediaText": { "$ref": "civilopediaText.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
       "steps": {
         "type": "array",
         "items": { "type": "string" },
