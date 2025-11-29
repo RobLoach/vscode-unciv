@@ -70,11 +70,13 @@
       },
       "isWonder": {
         "type": "boolean",
-        "description": "Whether this building is a global wonder"
+        "description": "Whether this building is a global wonder",
+        "default": false
       },
       "isNationalWonder": {
         "type": "boolean",
-        "description": "Whether this building is a national wonder"
+        "description": "Whether this building is a national wonder",
+        "default": false
       },
       "requiredBuilding": {
         "type": "string",

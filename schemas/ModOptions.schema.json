@@ -5,232 +5,281 @@
   "type": "object",
   "properties": {
     "isBaseRuleset": {
+      "title": "Is Base Ruleset",
       "type": "boolean",
       "description": "Replaces vanilla ruleset if true."
     },
-    "uniques": { "$ref": "Uniques.schema.json" },
+    "uniques": {
+      "title": "Uniques",
+      "$ref": "Uniques.schema.json",
+      "description": "Mod-wide special uniques."
+    },
     "techsToRemove": {
+      "title": "Techs To Remove",
       "type": "array",
       "items": { "type": "string" },
       "description": "List of Technologies or technologyFilter to remove (isBaseRuleset=false only)."
     },
     "buildingsToRemove": {
+      "title": "Buildings To Remove",
       "type": "array",
       "items": { "type": "string" },
       "description": "List of Buildings, Wonders or buildingFilter to remove (isBaseRuleset=false only)."
     },
     "unitsToRemove": {
+      "title": "Units To Remove",
       "type": "array",
       "items": { "type": "string" },
       "description": "List of Units or unitFilter to remove (isBaseRuleset=false only)."
     },
     "nationsToRemove": {
+      "title": "Nations To Remove",
       "type": "array",
       "items": { "type": "string" },
       "description": "List of Nations or nationFilter to remove (isBaseRuleset=false only)."
     },
     "policyBranchesToRemove": {
+      "title": "Policy Branches To Remove",
       "type": "array",
       "items": { "type": "string" },
       "description": "List of Policy Branches to remove (isBaseRuleset=false only)."
     },
     "policiesToRemove": {
+      "title": "Policies To Remove",
       "type": "array",
       "items": { "type": "string" },
       "description": "List of Policies to remove (isBaseRuleset=false only)."
     },
     "constants": {
+      "title": "Constants",
       "type": "object",
       "description": "A collection of constants used internally in Unciv. This is the only structure that is merged field by field from mods, not overwritten, so you can change XP from Barbarians in one mod and city distance in another. In case of conflicts, there is no guarantee which mod wins, only that default values are ignored.",
       "properties": {
         "maxXPfromBarbarians": {
+          "title": "Max XP from Barbarians",
           "type": "integer",
           "default": 30,
           "description": "Max amount of experience that can be gained from combat with barbarians."
         },
         "cityStrengthBase": {
+          "title": "City Strength Base",
           "type": "number",
           "default": 8.0,
           "description": "Base strength of a city."
         },
         "cityStrengthPerPop": {
+          "title": "City Strength Per Population",
           "type": "number",
           "default": 0.4,
           "description": "Strength added per population point."
         },
         "cityStrengthFromTechsMultiplier": {
+          "title": "City Strength From Techs Multiplier",
           "type": "number",
           "default": 5.5,
           "description": "Multiplier for strength gained from techs."
         },
         "cityStrengthFromTechsExponent": {
+          "title": "City Strength From Techs Exponent",
           "type": "number",
           "default": 2.8,
           "description": "Exponent for strength gained from techs."
         },
         "cityStrengthFromTechsFullMultiplier": {
+          "title": "City Strength From Techs Full Multiplier",
           "type": "number",
           "default": 1.0,
           "description": "Full multiplier for strength from techs."
         },
         "cityStrengthFromGarrison": {
+          "title": "City Strength From Garrison",
           "type": "number",
           "default": 0.2,
           "description": "Multiplier for strength from garrison units."
         },
         "baseCityBombardRange": {
+          "title": "Base City Bombard Range",
           "type": "integer",
           "default": 2,
           "description": "The distance that cities can attack."
         },
         "cityWorkRange": {
+          "title": "City Work Range",
           "type": "integer",
           "default": 3,
           "description": "The tiles in distance that population in cities can work on."
         },
         "cityExpandRange": {
+          "title": "City Expand Range",
           "type": "integer",
           "default": 5,
           "description": "The distance that cities can expand their borders to."
         },
         "cityAirUnitCapacity": {
+          "title": "City Air Unit Capacity",
           "type": "integer",
           "default": 6,
           "description": "Number of air units that can be stationed in a city."
         },
         "unitSupplyPerPopulation": {
+          "title": "Unit Supply Per Population",
           "type": "number",
           "default": 0.5,
           "description": "Unit supply per population point."
         },
         "minimalCityDistance": {
+          "title": "Minimal City Distance",
           "type": "integer",
           "default": 3,
           "description": "Minimal distance between any two cities on the same landmass."
         },
         "minimalCityDistanceOnDifferentContinents": {
+          "title": "Minimal City Distance On Different Continents",
           "type": "integer",
           "default": 2,
           "description": "Minimal distance between cities on different continents."
         },
         "unitUpgradeCost": {
+          "title": "Unit Upgrade Cost",
           "type": "object",
           "description": "Unit upgrade cost sub-structure.",
           "properties": {
-            "base": { "type": "number", "default": 10 },
-            "perProduction": { "type": "number", "default": 2 },
-            "eraMultiplier": { "type": "number", "default": 0 },
-            "exponent": { "type": "number", "default": 1 },
-            "roundTo": { "type": "integer", "default": 5 }
+            "base": { "title": "Base", "type": "number", "default": 10 },
+            "perProduction": { "title": "Per Production", "type": "number", "default": 2 },
+            "eraMultiplier": { "title": "Era Multiplier", "type": "number", "default": 0 },
+            "exponent": { "title": "Exponent", "type": "number", "default": 1 },
+            "roundTo": { "title": "Round To", "type": "integer", "default": 5 }
           },
           "additionalProperties": false
         },
         "naturalWonderCountMultiplier": {
+          "title": "Natural Wonder Count Multiplier",
           "type": "number",
           "default": 0.124,
           "description": "Multiplier for number of natural wonders spawned."
         },
         "naturalWonderCountAddedConstant": {
+          "title": "Natural Wonder Count Added Constant",
           "type": "number",
           "default": 0.1,
           "description": "Constant added to number of natural wonders spawned."
         },
         "ancientRuinCountMultiplier": {
+          "title": "Ancient Ruin Count Multiplier",
           "type": "number",
           "default": 0.02,
           "description": "Multiplier for number of ancient ruins spawned."
         },
         "spawnIceBelowTemperature": {
+          "title": "Spawn Ice Below Temperature",
           "type": "number",
           "default": -0.8,
           "description": "Temperature threshold below which ice spawns."
         },
         "maxLakeSize": {
+          "title": "Max Lake Size",
           "type": "integer",
           "default": 10,
           "description": "Maximum size of lakes in tiles."
         },
         "riverCountMultiplier": {
+          "title": "River Count Multiplier",
           "type": "number",
           "default": 0.01,
           "description": "Multiplier for river count."
         },
         "minRiverLength": {
+          "title": "Min River Length",
           "type": "integer",
           "default": 5,
           "description": "Minimum river length."
         },
         "maxRiverLength": {
+          "title": "Max River Length",
           "type": "integer",
           "default": 666,
           "description": "Maximum river length."
         },
         "religionLimitBase": {
+          "title": "Religion Limit Base",
           "type": "integer",
           "default": 1,
           "description": "Base number of foundable religions."
         },
         "religionLimitMultiplier": {
+          "title": "Religion Limit Multiplier",
           "type": "number",
           "default": 0.5,
           "description": "Multiplier for number of foundable religions."
         },
         "pantheonBase": {
+          "title": "Pantheon Base",
           "type": "integer",
           "default": 10,
           "description": "Base cost of pantheon."
         },
         "pantheonGrowth": {
+          "title": "Pantheon Growth",
           "type": "integer",
           "default": 5,
           "description": "Growth cost of pantheon per civ with religion."
         },
         "workboatAutomationSearchMaxTiles": {
+          "title": "Workboat Automation Search Max Tiles",
           "type": "integer",
           "default": 20,
           "description": "Max tiles for workboat automation search."
         },
         "maxSpyRank": {
+          "title": "Max Spy Rank",
           "type": "integer",
           "default": 3,
           "description": "Maximum rank any spy can reach."
         },
         "spyRankSkillPercentBonus": {
+          "title": "Spy Rank Skill Percent Bonus",
           "type": "number",
           "default": 30,
           "description": "Skill percent bonus per spy rank."
         },
         "minimumWarDuration": {
+          "title": "Minimum War Duration",
           "type": "integer",
           "default": 10,
           "description": "Minimum number of turns before peace negotiation."
         },
         "baseTurnsUntilRevolt": {
+          "title": "Base Turns Until Revolt",
           "type": "integer",
           "default": 4,
           "description": "Number of turns before a revolt is spawned."
         },
         "cityStateElectionTurns": {
+          "title": "City State Election Turns",
           "type": "integer",
           "default": 15,
           "description": "Number of turns between city-state elections."
         },
         "maxImprovementTechErasForward": {
+          "title": "Max Improvement Tech Eras Forward",
           "type": ["integer", "null"],
           "default": null,
           "description": "Improvement picker skips improvements whose tech requirement is more advanced than current Era + this value."
         },
         "goldGiftMultiplier": {
+          "title": "Gold Gift Multiplier",
           "type": "number",
           "default": 1,
           "description": "Multiplier for gold value of one-sided trade stored as gifts."
         },
         "goldGiftTradeMultiplier": {
+          "title": "Gold Gift Trade Multiplier",
           "type": "number",
           "default": 0.8,
           "description": "Multiplier for gold value of regular trade stored as gifts."
         },
         "goldGiftDegradationMultiplier": {
+          "title": "Gold Gift Degradation Multiplier",
           "type": "number",
           "default": 1.0,
           "description": "Multiplier for how quickly the GaveUsGifts diplomacy modifier runs out."
@@ -239,12 +288,14 @@
       "additionalProperties": false
     },
     "tileset": {
+      "title": "Tileset",
       "type": "string",
-      "description": "Tileset name. Only applicable for base rulesets."
+      "description": "The name of a Tileset to use for this mod. Only applicable for base rulesets."
     },
     "unitset": {
+      "title": "Unitset",
       "type": "string",
-      "description": "Unitset name. Only applicable for base rulesets."
+      "description": "The name of a Unitset to use for this mod. Only applicable for base rulesets."
     }
   },
   "additionalProperties": false

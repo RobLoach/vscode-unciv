@@ -11,7 +11,8 @@
         "title": "Name"
       },
       "type": {
-        "enum": ["Pantheon", "Founder", "Follower", "Enhancer"]
+        "enum": ["Pantheon", "Founder", "Follower", "Enhancer"],
+        "default": "Pantheon"
       },
       "uniques": {
         "$ref": "Uniques.schema.json"

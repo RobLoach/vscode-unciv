@@ -5,7 +5,7 @@
   "type": "array",
   "items": {
     "title": "Difficulty",
-    "description": "A Difficulty that will be available to the Ruleset.",
+    "description": "A Difficulty that will be available within the Ruleset.",
     "type": "object",
     "required": ["name"],
     "properties": {

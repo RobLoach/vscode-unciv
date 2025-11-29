@@ -16,7 +16,8 @@
       },
       "presentation": {
         "enum": ["None", "Alert", "Floating"],
-        "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators"
+        "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators",
+        "default": "None"
       },
       "uniques": { "$ref": "Uniques.schema.json" },
       "civilopediaText": { "$ref": "CivilopediaText.schema.json" },

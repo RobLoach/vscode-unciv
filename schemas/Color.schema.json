@@ -6,6 +6,8 @@
   "minLength": 3,
   "maxLength": 3,
   "items": {
+    "title": "Color Component",
+    "description": "An individual RGB color component from 0 to 255.",
     "type": "integer",
     "minimum": 0,
     "maximum": 255
