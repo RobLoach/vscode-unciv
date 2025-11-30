@@ -7,7 +7,7 @@
     "name": {
       "type": "string",
       "title": "Name",
-      "default": "GlobalUniques",
+      "default": "Global Uniques",
       "description": "The name field is not used, but still must be set (the Ruleset validator might display it)."
     },
     "uniques": {
@@ -17,7 +17,8 @@
     "unitUniques": {
       "$ref": "Uniques.schema.json",
       "description": "List of unique abilities that apply to each unit."
-    }
+    },
+    "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
   },
   "required": ["name"],
   "additionalProperties": false

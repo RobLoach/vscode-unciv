@@ -9,26 +9,42 @@
     "properties": {
       "name": {
         "type": "string",
-        "description": "Defines criteria of quest. Must be one of the predefined names for behavior."
+        "description": "Defines criteria of quest. Must be one of the predefined names for behavior.",
+        "examples": [
+          "Route",
+          "Clear Barbarian Camp",
+          "Construct Wonder",
+          "Connect Resource",
+          "Acquire Great Person",
+          "Conquer City State",
+          "Find Player",
+          "Find Natural Wonder",
+          "Give Gold"
+        ]
       },
       "description": {
+        "title": "Description",
         "type": "string",
         "description": "Description of the quest shown to players."
       },
       "type": {
+        "title": "Type",
         "type": "string",
         "enum": ["Individual", "Global"],
         "description": "Individual or Global quest."
       },
       "influence": {
+        "title": "Influence",
         "type": "number",
         "default": 40,
         "description": "Influence reward gained on quest completion."
       },
       "duration": {
+        "title": "Duration",
         "type": "integer",
         "default": 0,
-        "description": "Maximum number of turns to complete the quest. 0 means no turn limit."
+        "description": "Maximum number of turns to complete the quest. 0 means no turn limit.",
+        "minimum": 0
       },
       "minimumCivs": {
         "type": "integer",

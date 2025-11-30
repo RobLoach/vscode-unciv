@@ -5,6 +5,20 @@
   "type": "array",
   "items": {
     "type": "string",
-    "description": "A name of a Religion."
+    "title": "Religion",
+    "description": "A name of a Religion.",
+    "examples": [
+      "Buddhism",
+      "Christianity",
+      "Confucianism",
+      "Hinduism",
+      "Islam",
+      "Judaism",
+      "Shinto",
+      "Sikhism",
+      "Taoism",
+      "Tengriism",
+      "Zoroastrianism"
+    ]
   }
 }

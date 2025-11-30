@@ -110,7 +110,8 @@
           "additionalProperties": false
         }
       },
-      "uniques": { "$ref": "Uniques.schema.json" }
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "additionalProperties": false
   }

@@ -5,6 +5,7 @@
   "description": "A list of uniques to apply to the object. See https://yairm210.github.io/Unciv/Modders/uniques/",
   "items": {
     "type": "string",
+    "title": "Unique",
     "description": "A unique that is applied to the object. See https://yairm210.github.io/Unciv/Modders/uniques/",
     "$comment": "TODO: Add a `allOf` condition to validate the uniques."
   }

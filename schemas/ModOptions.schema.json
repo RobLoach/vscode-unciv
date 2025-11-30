@@ -145,8 +145,16 @@
           "description": "Unit upgrade cost sub-structure.",
           "properties": {
             "base": { "title": "Base", "type": "number", "default": 10 },
-            "perProduction": { "title": "Per Production", "type": "number", "default": 2 },
-            "eraMultiplier": { "title": "Era Multiplier", "type": "number", "default": 0 },
+            "perProduction": {
+              "title": "Per Production",
+              "type": "number",
+              "default": 2
+            },
+            "eraMultiplier": {
+              "title": "Era Multiplier",
+              "type": "number",
+              "default": 0
+            },
             "exponent": { "title": "Exponent", "type": "number", "default": 1 },
             "roundTo": { "title": "Round To", "type": "integer", "default": 5 }
           },

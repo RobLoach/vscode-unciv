@@ -74,7 +74,12 @@
       "priorities": {
         "type": "object",
         "description": "Priorities for each policy branch.",
-        "additionalProperties": true
+        "additionalProperties": {
+          "type": "number"
+        },
+        "propertyNames": {
+          "type": "string"
+        }
       },
 
       "uniques": { "$ref": "Uniques.schema.json" },

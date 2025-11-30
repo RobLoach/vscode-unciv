@@ -6,15 +6,19 @@
     "type": "object",
     "properties": {
       "text": {
+        "title": "Text",
         "type": "string",
-        "description": "Text to display"
+        "description": "Displays some text within the Civilopedia."
       },
       "link": {
         "type": "string",
-        "description": "Create link and icon, format: Category/Name or external link."
+        "title": "Link",
+        "description": "Create link and icon, format: Category/Name or external link.",
+        "examples": ["Building/Mosque", "Terrain/River"]
       },
       "icon": {
         "type": "string",
+        "title": "Icon",
         "description": "Show icon without linking, format: Category/Name"
       },
       "extraImage": {
@@ -43,23 +47,28 @@
       },
       "color": {
         "type": "string",
-        "description": "Sets text color, accepts names or 6/3-digit web colors (e.g. #FFA040)"
+        "description": "Sets text color, accepts names or 6/3-digit web colors (e.g. #FFA040)",
+        "default": "#FFA040"
       },
       "separator": {
         "type": "boolean",
-        "description": "Renders a separator line instead of text. Can be combined only with color and size (line width, default 2)"
+        "description": "Renders a separator line instead of text. Can be combined only with color and size (line width, default 2)",
+        "default": true
       },
       "starred": {
         "type": "boolean",
-        "description": "Decorates text with a star icon - if set, it receives the color instead of the text"
+        "description": "Decorates text with a star icon - if set, it receives the color instead of the text",
+        "default": true
       },
       "centered": {
         "type": "boolean",
-        "description": "Centers the line (and turns off automatic wrap). For an extraImage, turns on crop-to-content to equalize transparent borders"
+        "description": "Centers the line (and turns off automatic wrap). For an extraImage, turns on crop-to-content to equalize transparent borders",
+        "default": true
       },
       "iconCrossed": {
         "type": "boolean",
-        "description": "Paint a red X over the icon or link image"
+        "description": "Paint a red X over the icon or link image",
+        "default": true
       }
     }
   }

@@ -6,7 +6,11 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string" },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the promotion. Use I, II, or III suffixes for progressions."
+      },
       "prerequisites": {
         "type": "array",
         "items": { "type": "string" },
@@ -21,12 +25,14 @@
       "row": {
         "type": "integer",
         "minimum": 0,
-        "description": "Used as **column** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution."
+        "description": "Used as **column** hint in the promotion picker screen. Not a direct position, it is used.",
+        "default": 0
       },
       "column": {
         "type": "integer",
         "minimum": 0,
-        "description": "Used as **row** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution."
+        "description": "Used as **row** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution.",
+        "default": 0
       },
 
       "uniques": { "$ref": "Uniques.schema.json" },

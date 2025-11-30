@@ -6,7 +6,18 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string", "title": "Name" },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the Building.",
+        "examples": [
+          "National College",
+          "Granary",
+          "Library",
+          "Workshop",
+          "University"
+        ]
+      },
 
       "production": {
         "type": "number",

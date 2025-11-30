@@ -6,8 +6,16 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string", "title": "Name", "description": "The name of the Nation." },
-      "leaderName": { "type": "string", "title": "Leader Name", "description": "The name of the Leader for the Nation. Omit for City States." },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the Nation."
+      },
+      "leaderName": {
+        "type": "string",
+        "title": "Leader Name",
+        "description": "The name of the Leader for the Nation. Omit for City States."
+      },
       "adjective": {
         "title": "Adjective",
         "type": "array",
@@ -16,7 +24,11 @@
         "description": "Currently not in use"
       },
       "personality": { "type": "string" },
-      "style": { "type": "string", "title": "Style", "description": "Modifier appended to pixel unit image names" },
+      "style": {
+        "type": "string",
+        "title": "Style",
+        "description": "Modifier appended to pixel unit image names"
+      },
       "cityStateType": { "type": "string" },
       "outerColor": { "$ref": "Color.schema.json" },
       "innerColor": { "$ref": "Color.schema.json" },
@@ -56,7 +68,10 @@
       },
       "favoredReligion": { "type": "string" },
 
-      "uniqueName": { "type": "string", "description": "Decorative name for the special characteristic of this nation" },
+      "uniqueName": {
+        "type": "string",
+        "description": "Decorative name for the special characteristic of this nation"
+      },
       "uniqueText": {
         "type": "string",
         "description": "Freeform text that will be shown to users, overriding the list of uniques."

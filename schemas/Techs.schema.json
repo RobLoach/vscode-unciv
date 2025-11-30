@@ -9,48 +9,86 @@
       "columnNumber": {
         "type": "integer",
         "minimum": 0,
-        "description": "The number of this column in the techs matrix - 0 being the leftmost column"
+        "title": "Column Number",
+        "description": "Horizontal placement in the Tech Tree. 0 is the leftmost column."
       },
-      "era": { "type": "string" },
-      "techCost": { "type": "integer" },
-      "buildingCost": { "type": "integer" },
-      "wonderCost": { "type": "integer" },
+      "era": {
+        "type": "string",
+        "title": "Era",
+        "description": "Determines era reached after researching any technologies in this column. Must be in Eras.json."
+      },
+      "techCost": {
+        "type": "integer",
+        "title": "Tech Cost",
+        "description": "Default science cost for techs in this column.",
+        "default": 0
+      },
+      "buildingCost": {
+        "type": "integer",
+        "title": "Building Cost",
+        "description": "Default cost of buildings requiring this tech.",
+        "default": -1
+      },
+      "wonderCost": {
+        "type": "integer",
+        "title": "Wonder Cost",
+        "description": "Default cost of wonders requiring this tech.",
+        "default": -1
+      },
       "techs": {
         "type": "array",
+        "title": "Techs",
+        "description": "List of techs in this column.",
         "items": {
           "type": "object",
           "properties": {
-            "name": { "type": "string" },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": "The name of the technology."
+            },
             "row": {
               "type": "integer",
               "minimum": 1,
-              "description": "The row, within the column, where this tech appears - 1 being the topmost tech"
+              "title": "Row",
+              "description": "Vertical placement in the Tech Tree, must be unique per column. 1 is the topmost tech."
             },
             "cost": {
               "type": "integer",
-              "description": "Science cost of this tech - overrides the column techCost"
+              "title": "Cost",
+              "description": "Science cost of this tech. Overrides the column techCost."
             },
-            "uniques": { "$ref": "Uniques.schema.json" },
+            "uniques": {
+              "$ref": "Uniques.schema.json",
+              "title": "Uniques",
+              "description": "List of unique abilities this technology grants."
+            },
             "prerequisites": {
               "type": "array",
-              "items": { "type": "string" },
-              "description": "The names of techs which must be researched before this tech can be researched",
+              "items": {
+                "type": "string",
+                "title": "Prerequisite",
+                "description": "A Technology that is required to be researched prior."
+              },
+              "title": "Prerequisites",
+              "description": "Names of techs that must be researched before this tech can be researched. Only direct prerequisites are necessary.",
               "uniqueItems": true
             },
-            "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
+            "civilopediaText": {
+              "$ref": "CivilopediaText.schema.json",
+              "title": "Civilopedia Text",
+              "description": "Civilopedia entry describing this technology."
+            },
             "quote": {
               "type": "string",
-              "description": "The quote that is displayed when you have researched the tech - flavor text"
+              "title": "Quote",
+              "description": "A nice story presented to the player when they research this tech."
             }
           },
           "required": ["name", "row"],
           "additionalProperties": false
         }
-      },
-
-      "uniques": { "$ref": "Uniques.schema.json" },
-
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+      }
     },
     "required": ["columnNumber", "era"],
     "additionalProperties": false

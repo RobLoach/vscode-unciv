@@ -20,6 +20,8 @@
       "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
 
       "policies": {
+        "title": "Policies",
+        "description": "List of member policies and branch 'finisher'.",
         "type": "array",
         "items": {
           "type": "object",
@@ -46,7 +48,6 @@
           },
           "required": ["name"]
         },
-        "description": "List of member policies and branch 'finisher'.",
         "uniqueItems": true
       }
     },

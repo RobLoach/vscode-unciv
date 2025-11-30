@@ -6,38 +6,118 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string" },
+      "name": {
+        "type": "string",
+        "title": "Resource Name",
+        "description": "The name of the resource.",
+        "examples": [
+          "Bananas",
+          "Wheat",
+          "Cattle",
+          "Sheep",
+          "Bison",
+          "Deer",
+          "Iron"
+        ]
+      },
       "terrainsCanBeFoundOn": {
         "type": "array",
         "items": { "type": "string" },
-        "uniqueItems": true
+        "uniqueItems": true,
+        "title": "Terrains",
+        "description": "List of terrain types where this resource can be found."
       },
-      "improvement": { "type": "string" },
+      "improvement": {
+        "type": "string",
+        "title": "Improvement",
+        "description": "The improvement required to obtain this resource. Must be in TileImprovements.json."
+      },
       "resourceType": {
         "enum": ["Strategic", "Luxury", "Bonus"],
-        "default": "Bonus"
+        "default": "Bonus",
+        "title": "Resource Type",
+        "description": "The type of resource: Strategic, Luxury, or Bonus."
       },
-      "revealedBy": { "type": "string" },
+      "revealedBy": {
+        "type": "string",
+        "examples": ["Iron Working", "Archaeology"],
+        "title": "Revealed By",
+        "description": "The technology or condition that reveals this resource."
+      },
       "improvedBy": {
         "type": "array",
         "items": { "type": "string" },
-        "uniqueItems": true
+        "uniqueItems": true,
+        "title": "Improved By",
+        "description": "The improvements required for obtaining this resource. Must be in TileImprovements.json."
       },
-      "improvementStats": { "$ref": "Stats.schema.json" },
-
-      "production": { "type": "number" },
-      "food": { "type": "number" },
-      "gold": { "type": "number" },
-      "science": { "type": "number" },
-      "culture": { "type": "number" },
-      "happiness": { "type": "number" },
-      "faith": { "type": "number" },
-
-      "majorDepositAmount": { "$ref": "TileResourcesAmount.schema.json" },
-      "minorDepositAmount": { "$ref": "TileResourcesAmount.schema.json" },
-
-      "uniques": { "$ref": "Uniques.schema.json" },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+      "improvementStats": {
+        "$ref": "Stats.schema.json",
+        "title": "Improvement Stats",
+        "description": "Stats provided by the improvement for this resource."
+      },
+      "production": {
+        "type": "number",
+        "title": "Production",
+        "description": "Per-turn Production yield provided by this resource.",
+        "default": 0
+      },
+      "food": {
+        "type": "number",
+        "title": "Food",
+        "description": "Per-turn Food yield provided by this resource.",
+        "default": 0
+      },
+      "gold": {
+        "type": "number",
+        "title": "Gold",
+        "description": "Per-turn Gold yield provided by this resource.",
+        "default": 0
+      },
+      "science": {
+        "type": "number",
+        "title": "Science",
+        "description": "Per-turn Science yield provided by this resource.",
+        "default": 0
+      },
+      "culture": {
+        "type": "number",
+        "title": "Culture",
+        "description": "Per-turn Culture yield provided by this resource.",
+        "default": 0
+      },
+      "happiness": {
+        "type": "number",
+        "title": "Happiness",
+        "description": "Per-turn Happiness yield provided by this resource.",
+        "default": 0
+      },
+      "faith": {
+        "type": "number",
+        "title": "Faith",
+        "description": "Per-turn Faith yield provided by this resource.",
+        "default": 0
+      },
+      "majorDepositAmount": {
+        "$ref": "TileResourcesAmount.schema.json",
+        "title": "Major Deposit Amount",
+        "description": "Amount of resource in a major deposit."
+      },
+      "minorDepositAmount": {
+        "$ref": "TileResourcesAmount.schema.json",
+        "title": "Minor Deposit Amount",
+        "description": "Amount of resource in a minor deposit."
+      },
+      "uniques": {
+        "$ref": "Uniques.schema.json",
+        "title": "Uniques",
+        "description": "Uniques applied to this resource."
+      },
+      "civilopediaText": {
+        "$ref": "CivilopediaText.schema.json",
+        "title": "Civilopedia Text",
+        "description": "Civilopedia entry describing this resource."
+      }
     },
     "required": ["name"],
     "additionalProperties": false

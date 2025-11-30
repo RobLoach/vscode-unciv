@@ -6,7 +6,18 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string", "title": "Name" },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the City State Type.",
+        "examples": [
+          "Cultured",
+          "Maritime",
+          "Mercantile",
+          "Militaristic",
+          "Religious"
+        ]
+      },
       "friendBonusUniques": {
         "$ref": "Uniques.schema.json",
         "description": "List of unique abilities granted to major civilizations when friends with this city state"
@@ -17,7 +28,8 @@
       },
       "color": {
         "$ref": "Color.schema.json",
-        "description": "RGB color of text in civilopedia"
+        "description": "RGB color of text in civilopedia",
+        "default": [255, 255, 255]
       }
     },
     "required": ["name"],

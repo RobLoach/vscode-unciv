@@ -1,6 +1,6 @@
 {
-	"Unciv Building": {
-		"scope": "jsonc",
+  "Unciv Building": {
+    "scope": "jsonc",
     "body": [
       "{",
       "    \"name\": \"${1:name}\",",
@@ -32,6 +32,6 @@
       "    \"civilopediaText\": [${28:}]",
       "}"
     ],
-		"description": "Add an individual Unciv Building to the list."
-	}
+    "description": "Add an individual Unciv Building to the list."
+  }
 }

@@ -8,12 +8,19 @@
     "properties": {
       "name": {
         "type": "string",
+        "title": "Name",
         "description": "The name of the unit name group. For example: Scientist."
       },
       "unitNames": {
         "type": "array",
+        "title": "Unit Names",
         "description": "A list of names that apply to the group. For example: Alan Turing.",
-        "items": { "type": "string" }
+        "items": {
+          "type": "string",
+          "title": "Unit Name",
+          "description": "A unit name that can be assigned to applicable units."
+        },
+        "default": []
       },
       "uniques": { "$ref": "Uniques.schema.json" },
       "civilopediaText": { "$ref": "CivilopediaText.schema.json" }

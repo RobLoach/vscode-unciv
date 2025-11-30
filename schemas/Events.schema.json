@@ -7,7 +7,8 @@
     "type": "object",
     "properties": {
       "name": {
-        "type": "string", "title": "Name",
+        "type": "string",
+        "title": "Name",
         "description": "Used for triggering via 'Triggers a [event] event' unique"
       },
       "text": {
@@ -24,13 +25,14 @@
 
       "choices": {
         "type": "array",
+        "title": "Choices",
         "description": "User can choose to trigger one of the viable choices",
         "items": {
           "properties": {
-            "text": { "type": "string" },
+            "text": { "type": "string", "title": "Text", "description": "The text that is displayed to the user for the choice." },
             "uniques": { "$ref": "Uniques.schema.json" },
             "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
-            "keyShortcut": { "type": "string" }
+            "keyShortcut": { "type": "string", "description": "The key that would invoke the given choice. See https://github.com/libgdx/libgdx/blob/master/gdx/src/com/badlogic/gdx/Input.java", "examples": ["A", "B", "C"] }
           },
           "required": ["text", "uniques"],
           "additionalProperties": false

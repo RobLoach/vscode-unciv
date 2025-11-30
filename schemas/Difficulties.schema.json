@@ -9,7 +9,7 @@
     "type": "object",
     "required": ["name"],
     "properties": {
-      "name": { "type": "string" },
+      "name": { "type": "string", "title": "Name" },
       "baseHappiness": { "type": "integer", "default": 0 },
       "extraHappinessPerLuxury": { "type": "number", "default": 0 },
       "researchCostModifier": { "type": "number", "default": 1 },
@@ -27,7 +27,11 @@
         "default": [],
         "description": "Can also be 'Era Starting Unit', maps to startingMilitaryUnit of the Eras file. All other units must be in Units.json. Applies only to human player civs"
       },
-      "aiDifficultyLevel": { "type": "string", "default": "", "description": "Applies some modifiers to the AI from the chosen difficulty. Modifiers such as unhappinessModifier and aiUnhappinessModifier stack multiplicatively. If empty: defaults to Chieftain, or the first available difficulty." },
+      "aiDifficultyLevel": {
+        "type": "string",
+        "default": "",
+        "description": "Applies some modifiers to the AI from the chosen difficulty. Modifiers such as unhappinessModifier and aiUnhappinessModifier stack multiplicatively. If empty: defaults to Chieftain, or the first available difficulty."
+      },
       "aiCityGrowthModifier": { "type": "number", "default": 1 },
       "aiUnitCostModifier": { "type": "number", "default": 1 },
       "aiBuildingCostModifier": { "type": "number", "default": 1 },
