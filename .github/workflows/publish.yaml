@@ -5,6 +5,17 @@ on:
     tags: ['*']
 
 jobs:
+  ovsx:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24 }
+      - run: npm install
+      - run: npx ovsx publish
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+
   vsce:
     runs-on: ubuntu-latest
     steps:
