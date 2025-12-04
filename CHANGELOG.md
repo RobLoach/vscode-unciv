@@ -4,6 +4,10 @@ All notable changes to the "unciv" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.1.6]
+
+- Add titles and descriptions for Difficulties
+
 ## [0.1.5]
 
 - Added examples within Victory Types and Unit Types
