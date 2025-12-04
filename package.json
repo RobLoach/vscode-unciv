@@ -1,7 +1,7 @@
 {
   "name": "unciv",
   "displayName": "Unciv",
-  "description": "Unciv VSCode extension to validate mods, provide type hinting, and intellisense.",
+  "description": "Unciv VSCode extension to provide mod validation, type hinting, autocomplete, and intellisense.",
   "publisher": "robloach",
   "author": "Rob Loach (https://robloach.net)",
   "license": "MIT",
