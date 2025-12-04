@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Nations.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Nations",
   "description": "A list of nations, including their leaders, colors, and other attributes.",

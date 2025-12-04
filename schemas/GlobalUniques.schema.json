@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Events.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "GlobalUniques",
   "description": "GlobalUniques defines uniques that apply globally. e.g. Vanilla rulesets define the effects of Unhappiness here.",

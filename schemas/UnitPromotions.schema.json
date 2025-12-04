@@ -1,6 +1,7 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/UnitPromotions.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
-  "title": "UnitPromotions",
+  "title": "Unit Promotions",
   "description": "A list of unit promotions, including prerequisites and effects.",
   "type": "array",
   "items": {
@@ -12,6 +13,8 @@
         "description": "The name of the promotion. Use I, II, or III suffixes for progressions."
       },
       "prerequisites": {
+        "title": "Prerequisites",
+        "description": "Prerequisite promotions that are required prior to being able to get the active one.",
         "type": "array",
         "items": { "type": "string" },
         "uniqueItems": true

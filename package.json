@@ -5,7 +5,7 @@
   "publisher": "robloach",
   "author": "Rob Loach (https://robloach.net)",
   "license": "MIT",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "icon": "icon.png",
   "private": true,
   "engines": {

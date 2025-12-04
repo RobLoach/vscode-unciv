@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/CityStateTypes.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "CityStateTypes",
   "description": "A list of city state types, including their bonuses and color information.",

@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Religions.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Religions",
   "description": "A list of Religion names that will be used.",

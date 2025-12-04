@@ -1,6 +1,7 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/TileSetConfig.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "TileSetConfig",
+  "title": "TileSet Config",
   "description": "A TileSet definition.",
   "type": "object",
   "properties": {

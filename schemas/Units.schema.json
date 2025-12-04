@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Units.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Units",
   "description": "A list of units, including their stats, type, and abilities.",
@@ -128,7 +129,10 @@
         "description": "Civilopedia entry describing this unit."
       }
     },
-    "required": ["name", "unitType"],
+    "required": [
+      "name",
+      "unitType"
+    ],
     "additionalProperties": false
   }
 }

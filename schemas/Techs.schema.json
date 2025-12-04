@@ -1,6 +1,7 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Techs.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
-  "title": "Techs",
+  "title": "Technologies",
   "description": "A list of technologies, including their costs, prerequisites, and effects.",
   "type": "array",
   "items": {

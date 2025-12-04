@@ -1,4 +1,5 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Personalities.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Personalities",
   "description": "A list of AI personalities, including their preferred victory types and stat focuses.",

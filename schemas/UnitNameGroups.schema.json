@@ -1,6 +1,7 @@
 {
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/UnitNameGroups.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
-  "title": "UnitNameGroups",
+  "title": "Unit Name Groups",
   "description": "A list of unit name groups, each with a name and associated unit names.",
   "type": "array",
   "items": {
@@ -9,7 +10,8 @@
       "name": {
         "type": "string",
         "title": "Name",
-        "description": "The name of the unit name group. For example: Scientist."
+        "description": "The name of the unit name group.",
+        "examples": ["General", "Admiral", "Artist","Merchant", "Engineer", "Scientist"]
       },
       "unitNames": {
         "type": "array",
@@ -18,7 +20,8 @@
         "items": {
           "type": "string",
           "title": "Unit Name",
-          "description": "A unit name that can be assigned to applicable units."
+          "description": "A unit name that can be assigned to applicable units.",
+          "examples": ["Albert Einstein"]
         },
         "default": []
       },
