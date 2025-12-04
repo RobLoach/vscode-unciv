@@ -9,75 +9,160 @@
     "properties": {
       "name": {
         "type": "string",
-        "title": "Name",
-        "description": "The name of the Nation."
+        "title": "Nation Name",
+        "description": "The official name of the nation."
       },
       "leaderName": {
         "type": "string",
         "title": "Leader Name",
-        "description": "The name of the Leader for the Nation. Omit for City States."
+        "description": "The name of the leader representing the nation. Omit for city states."
       },
       "adjective": {
-        "title": "Adjective",
+        "title": "Leader Adjectives",
         "type": "array",
         "items": { "type": "string" },
         "uniqueItems": true,
-        "description": "Currently not in use"
+        "description": "The adjectives for the leader. Currently not in use."
       },
-      "personality": { "type": "string" },
+      "personality": {
+        "type": "string",
+        "title": "Leader Personality",
+        "description": "Defines the personality type of the nation's leader. See Personalities.json."
+      },
       "style": {
         "type": "string",
-        "title": "Style",
-        "description": "Modifier appended to pixel unit image names"
+        "title": "Visual Style",
+        "description": "Modifier appended to image names for visual differentiation."
       },
-      "cityStateType": { "type": "string" },
-      "outerColor": { "$ref": "Color.schema.json" },
-      "innerColor": { "$ref": "Color.schema.json" },
-
-      "preferredVictoryType": { "type": "string" },
+      "cityStateType": {
+        "type": "string",
+        "title": "City State Type",
+        "description": "Type of city state, if applicable. See CityStateTypes.json",
+        "examples": ["Cultured", "Maritime", "Mercantile", "Religious", "Militaristic"]
+      },
+      "outerColor": {
+        "$ref": "Color.schema.json",
+        "title": "Outer Color",
+        "description": "The primary color representing the nation."
+      },
+      "innerColor": {
+        "$ref": "Color.schema.json",
+        "title": "Inner Color",
+        "description": "The secondary color representing the nation."
+      },
+      "preferredVictoryType": {
+        "type": "string",
+        "title": "Preferred Victory Type",
+        "description": "The victory type most favored by this nation. See VictoryTypes.json.",
+        "examples": [
+          "Domination",
+          "Science",
+          "Cultural"
+        ]
+      },
       "startBias": {
         "type": "array",
         "items": { "type": "string" },
         "uniqueItems": true,
-        "description": "Types of tiles where the civ will be more likely to start"
+        "title": "Start Bias",
+        "description": "Types of tiles where the nation is more likely to start."
       },
-
-      "uniques": { "$ref": "Uniques.schema.json" },
-
-      "introduction": { "type": "string" },
-      "tradeRequest": { "type": "string" },
-      "neutralHello": { "type": "string" },
-      "hateHello": { "type": "string" },
-
-      "declaringWar": { "type": "string" },
-      "attacked": { "type": "string" },
-      "defeated": { "type": "string" },
-      "denounced": { "type": "string" },
-      "declaringFriendship": { "type": "string" },
-      "startIntroPart1": { "type": "string" },
-      "startIntroPart2": { "type": "string" },
+      "uniques": {
+        "$ref": "Uniques.schema.json",
+        "title": "Unique Abilities",
+        "description": "Special abilities or traits unique to this nation."
+      },
+      "introduction": {
+        "type": "string",
+        "title": "Introduction",
+        "description": "Text introducing the nation to the player."
+      },
+      "tradeRequest": {
+        "type": "string",
+        "title": "Trade Request",
+        "description": "Text shown when the nation requests a trade."
+      },
+      "neutralHello": {
+        "type": "string",
+        "title": "Neutral Greeting",
+        "description": "Greeting text when relations are neutral."
+      },
+      "hateHello": {
+        "type": "string",
+        "title": "Hostile Greeting",
+        "description": "Greeting text when relations are hostile."
+      },
+      "declaringWar": {
+        "type": "string",
+        "title": "Declaring War",
+        "description": "Text shown when the nation declares war."
+      },
+      "attacked": {
+        "type": "string",
+        "title": "Attacked",
+        "description": "Text shown when the nation is attacked."
+      },
+      "defeated": {
+        "type": "string",
+        "title": "Defeated",
+        "description": "Text shown when the nation is defeated."
+      },
+      "denounced": {
+        "type": "string",
+        "title": "Denounced",
+        "description": "Text shown when the nation is denounced."
+      },
+      "declaringFriendship": {
+        "type": "string",
+        "title": "Declaring Friendship",
+        "description": "Text shown when the nation declares friendship."
+      },
+      "startIntroPart1": {
+        "type": "string",
+        "title": "Start Introduction Part 1",
+        "description": "First part of the introduction at the start of the game."
+      },
+      "startIntroPart2": {
+        "type": "string",
+        "title": "Start Introduction Part 2",
+        "description": "Second part of the introduction at the start of the game."
+      },
       "cities": {
         "type": "array",
         "items": { "type": "string" },
         "uniqueItems": true,
-        "description": "Ordered list of names of cities unique to the nation, starting with the capital"
+        "title": "City Names",
+        "description": "Ordered list of city names unique to the nation, starting with the capital."
       },
       "spyNames": {
         "type": "array",
         "items": { "type": "string" },
-        "uniqueItems": true
+        "uniqueItems": true,
+        "title": "Spy Names",
+        "description": "List of names for spies belonging to the nation."
       },
-      "favoredReligion": { "type": "string" },
-
+      "favoredReligion": {
+        "type": "string",
+        "title": "Favored Religion",
+        "description": "The religion most favored by this nation.",
+        "default": "",
+        "examples": ["Islam", "Buddhism", "Taoism"]
+      },
       "uniqueName": {
         "type": "string",
-        "description": "Decorative name for the special characteristic of this nation"
+        "title": "Unique Name",
+        "description": "Decorative name for the special characteristic of this nation."
       },
       "uniqueText": {
         "type": "string",
-        "description": "Freeform text that will be shown to users, overriding the list of uniques."
+        "title": "Unique Description",
+        "description": "Freeform text shown to users, overriding the list of uniques."
       },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+      "civilopediaText": {
+        "$ref": "CivilopediaText.schema.json",
+        "title": "Civilopedia Text",
+        "description": "Additional descriptive text for the nation in the Civilopedia."
+      }
     },
     "required": ["name", "outerColor"],
     "additionalProperties": false

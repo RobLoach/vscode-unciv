@@ -33,7 +33,7 @@
             "text": { "type": "string", "title": "Text", "description": "The text that is displayed to the user for the choice." },
             "uniques": { "$ref": "Uniques.schema.json" },
             "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
-            "keyShortcut": { "type": "string", "description": "The key that would invoke the given choice. See https://github.com/libgdx/libgdx/blob/master/gdx/src/com/badlogic/gdx/Input.java", "examples": ["A", "B", "C"] }
+            "keyShortcut": { "type": "string", "title": "Keyboard Shortcut", "description": "The key that would invoke the given choice. See https://github.com/libgdx/libgdx/blob/master/gdx/src/com/badlogic/gdx/Input.java", "examples": ["A", "B", "C"] }
           },
           "required": ["text", "uniques"],
           "additionalProperties": false
