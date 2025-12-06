@@ -3,7 +3,7 @@
 [![VSCode Marketplace](https://img.shields.io/badge/VSCode-robloach.unciv-blue)](https://marketplace.visualstudio.com/items?itemName=robloach.unciv)
 [![Open VSX](https://img.shields.io/badge/OpenVSX-robloach.unciv-pink)](https://open-vsx.org/extension/robloach/unciv)
 
-[Visual Studio Code](https://code.visualstudio.com/) extension for [Unciv](https://github.com/yairm210/Unciv) to provide mod validation, type-hinting, autocomplete, error highlighting, and intellisense.
+[Visual Studio Code](https://code.visualstudio.com/) extension for [Unciv](https://github.com/yairm210/Unciv) mod validation, type-hinting, autocomplete, error highlighting, and intellisense.
 
 ## Features
 

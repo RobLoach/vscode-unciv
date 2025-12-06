@@ -1,15 +1,15 @@
 {
   "name": "unciv",
   "displayName": "Unciv",
-  "description": "VSCode extension to provide Unciv mod validation, type hinting, autocomplete, and intellisense.",
+  "description": "Unciv mod validation, type hinting, autocomplete, and intellisense.",
   "publisher": "robloach",
   "author": "Rob Loach (https://robloach.net)",
   "license": "MIT",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "icon": "icon.png",
   "private": true,
   "engines": {
-    "vscode": "^1.106.1"
+    "vscode": "^1.67.0"
   },
   "scripts": {
     "prebuild": "rm -rf *.vsix node_modules && npm install --production",

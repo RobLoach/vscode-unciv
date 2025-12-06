@@ -82,13 +82,13 @@
       },
       "outerColor": {
         "$ref": "Color.schema.json",
-        "title": "Outer Color",
-        "description": "Color of the icon."
+        "title": "Outer Color: Background",
+        "description": "Color of the background."
       },
       "innerColor": {
         "$ref": "Color.schema.json",
-        "title": "Inner Color",
-        "description": "Color of the background."
+        "title": "Inner Color: Icon",
+        "description": "Color of the icon."
       }
     },
     "required": [
