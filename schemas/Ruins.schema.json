@@ -32,6 +32,12 @@
         "default": 1,
         "description": "Relative weight this reward is chosen next."
       },
+      "color": {
+        "title": "Color",
+        "type": "string",
+        "description": "The color used for the reward in the Civilopedia (e.g. #FFA040)",
+        "default": "#FFEB7F"
+      },
       "uniques": { "$ref": "Uniques.schema.json" },
       "excludedDifficulties": {
         "title": "Excluded Difficulties",
