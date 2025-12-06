@@ -42,6 +42,7 @@
     ],
     "configurationDefaults": {
       "files.associations": {
+        "Atlases.json": "plaintext",
         "Beliefs.json": "jsonc",
         "Buildings.json": "jsonc",
         "CityStateTypes.json": "jsonc",
