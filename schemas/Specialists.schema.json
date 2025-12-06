@@ -71,7 +71,8 @@
         "additionalProperties": {
           "type": "integer"
         }
-      }
+      },
+      "uniques": { "$ref": "Uniques.schema.json" }
     },
     "required": [
       "name",
