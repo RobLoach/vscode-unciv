@@ -112,12 +112,10 @@
       },
       "uniques": {
         "$ref": "Uniques.schema.json",
-        "title": "Uniques",
         "description": "Unique properties or effects of this terrain."
       },
       "civilopediaText": {
         "$ref": "CivilopediaText.schema.json",
-        "title": "Civilopedia Text",
         "description": "Civilopedia entry describing this terrain."
       }
     },

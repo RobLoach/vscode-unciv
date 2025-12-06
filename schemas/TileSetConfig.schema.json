@@ -20,12 +20,33 @@
       "title": "Unexplored Tile Color",
       "description": "The color used for unexplored tiles. The color gets approximated by 60% to allow the colors of the images below to shine through.",
       "properties": {
-        "r": { "type": "number", "minimum": 0, "maximum": 1 },
-        "g": { "type": "number", "minimum": 0, "maximum": 1 },
-        "b": { "type": "number", "minimum": 0, "maximum": 1 },
-        "a": { "type": "number", "minimum": 0, "maximum": 1 }
+        "r": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "g": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "b": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "a": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
       },
-      "required": ["r", "g", "b", "a"],
+      "required": [
+        "r",
+        "g",
+        "b",
+        "a"
+      ],
       "additionalProperties": false
     },
     "fogOfWarColor": {
@@ -33,18 +54,45 @@
       "title": "Fog Of War Color",
       "description": "The color used for fog of war tiles.",
       "properties": {
-        "r": { "type": "number", "minimum": 0, "maximum": 1 },
-        "g": { "type": "number", "minimum": 0, "maximum": 1 },
-        "b": { "type": "number", "minimum": 0, "maximum": 1 },
-        "a": { "type": "number", "minimum": 0, "maximum": 1 }
+        "r": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "g": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "b": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "a": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
       },
-      "required": ["r", "g", "b", "a"],
+      "required": [
+        "r",
+        "g",
+        "b",
+        "a"
+      ],
       "additionalProperties": false
     },
     "fallbackTileSet": {
-      "type": ["string", "null"],
+      "type": [
+        "string",
+        "null"
+      ],
       "title": "Fallback Tile Set",
-      "description": "The name of another tileset whose images should be used if this tileset is missing images. Can be set to null to disable the the fallback tileset."
+      "description": "The name of another tileset whose images should be used if this tileset is missing images. Can be set to null to disable the the fallback tileset.",
+      "examples": [
+        "FantasyHex"
+      ]
     },
     "tileScale": {
       "type": "number",
@@ -55,7 +103,9 @@
       "type": "object",
       "title": "Tile Scales",
       "description": "Used by the Minimal tileset to scale all its tiles except the base terrain down. Each entry overrides the tileScale value for the specified tile.",
-      "additionalProperties": { "type": "number" }
+      "additionalProperties": {
+        "type": "number"
+      }
     },
     "ruleVariants": {
       "type": "object",
@@ -63,7 +113,9 @@
       "description": "A mapping of rule variant names to arrays of strings.",
       "additionalProperties": {
         "type": "array",
-        "items": { "type": "string" }
+        "items": {
+          "type": "string"
+        }
       }
     }
   },

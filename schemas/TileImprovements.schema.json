@@ -14,7 +14,9 @@
       },
       "terrainsCanBeBuiltOn": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "uniqueItems": true,
         "title": "Terrains Can Be Built On",
         "description": "Terrains that this improvement can be built on. Removable terrain features will need to be removed before building an improvement. Must be in Terrains.json"
@@ -80,10 +82,16 @@
         "title": "Faith",
         "description": "Per-turn bonus Faith yield for the tile"
       },
-      "uniques": { "$ref": "Uniques.schema.json" },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+      "uniques": {
+        "$ref": "Uniques.schema.json"
+      },
+      "civilopediaText": {
+        "$ref": "CivilopediaText.schema.json"
+      }
     },
-    "required": ["name"],
+    "required": [
+      "name"
+    ],
     "additionalProperties": false
   }
 }

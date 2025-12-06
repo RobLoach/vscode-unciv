@@ -16,39 +16,57 @@
       "description": "Mod-wide special uniques."
     },
     "techsToRemove": {
-      "title": "Techs To Remove",
+      "title": "Technologies To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string",
+        "title": "Technology to Remove",
+        "description": "A technology that will be removed from the ruleset."
+      },
       "description": "List of Technologies or technologyFilter to remove (isBaseRuleset=false only)."
     },
     "buildingsToRemove": {
       "title": "Buildings To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string",
+        "examples": [
+          "Utopia Project",
+          "National Treasury"
+        ]
+      },
       "description": "List of Buildings, Wonders or buildingFilter to remove (isBaseRuleset=false only)."
     },
     "unitsToRemove": {
       "title": "Units To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Units or unitFilter to remove (isBaseRuleset=false only)."
     },
     "nationsToRemove": {
       "title": "Nations To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Nations or nationFilter to remove (isBaseRuleset=false only)."
     },
     "policyBranchesToRemove": {
       "title": "Policy Branches To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Policy Branches to remove (isBaseRuleset=false only)."
     },
     "policiesToRemove": {
       "title": "Policies To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Policies to remove (isBaseRuleset=false only)."
     },
     "constants": {
@@ -72,7 +90,8 @@
           "title": "City Strength Per Population",
           "type": "number",
           "default": 0.4,
-          "description": "Strength added per population point."
+          "description": "Strength added per population point.",
+          "minimum": 0
         },
         "cityStrengthFromTechsMultiplier": {
           "title": "City Strength From Techs Multiplier",
@@ -102,25 +121,29 @@
           "title": "Base City Bombard Range",
           "type": "integer",
           "default": 2,
-          "description": "The distance that cities can attack."
+          "description": "The distance that cities can attack.",
+          "minimum": 0
         },
         "cityWorkRange": {
           "title": "City Work Range",
           "type": "integer",
           "default": 3,
-          "description": "The tiles in distance that population in cities can work on."
+          "description": "The tiles in distance that population in cities can work on.",
+          "minimum": 0
         },
         "cityExpandRange": {
           "title": "City Expand Range",
           "type": "integer",
           "default": 5,
-          "description": "The distance that cities can expand their borders to."
+          "description": "The distance that cities can expand their borders to.",
+          "minimum": 0
         },
         "cityAirUnitCapacity": {
           "title": "City Air Unit Capacity",
           "type": "integer",
           "default": 6,
-          "description": "Number of air units that can be stationed in a city."
+          "description": "Number of air units that can be stationed in a city.",
+          "minimum": 0
         },
         "unitSupplyPerPopulation": {
           "title": "Unit Supply Per Population",
@@ -145,7 +168,11 @@
           "type": "object",
           "description": "Unit upgrade cost sub-structure.",
           "properties": {
-            "base": { "title": "Base", "type": "number", "default": 10 },
+            "base": {
+              "title": "Base",
+              "type": "number",
+              "default": 10
+            },
             "perProduction": {
               "title": "Per Production",
               "type": "number",
@@ -156,8 +183,16 @@
               "type": "number",
               "default": 0
             },
-            "exponent": { "title": "Exponent", "type": "number", "default": 1 },
-            "roundTo": { "title": "Round To", "type": "integer", "default": 5 }
+            "exponent": {
+              "title": "Exponent",
+              "type": "number",
+              "default": 1
+            },
+            "roundTo": {
+              "title": "Round To",
+              "type": "integer",
+              "default": 5
+            }
           },
           "additionalProperties": false
         },
@@ -189,7 +224,8 @@
           "title": "Max Lake Size",
           "type": "integer",
           "default": 10,
-          "description": "Maximum size of lakes in tiles."
+          "description": "Maximum size of lakes in tiles.",
+          "minimum": 0
         },
         "riverCountMultiplier": {
           "title": "River Count Multiplier",
@@ -271,7 +307,10 @@
         },
         "maxImprovementTechErasForward": {
           "title": "Max Improvement Tech Eras Forward",
-          "type": ["integer", "null"],
+          "type": [
+            "integer",
+            "null"
+          ],
           "default": null,
           "description": "Improvement picker skips improvements whose tech requirement is more advanced than current Era + this value."
         },

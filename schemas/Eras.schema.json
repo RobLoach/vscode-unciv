@@ -130,6 +130,8 @@
         "description": "Sound theme for cities in this era."
       }
     },
-    "required": ["name"]
+    "required": [
+      "name"
+    ]
   }
 }

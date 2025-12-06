@@ -19,119 +19,159 @@
           "University"
         ]
       },
-
       "production": {
         "type": "number",
-        "description": "Production yield provided by this building per turn"
+        "title": "Production",
+        "description": "Production yield provided by this building per turn."
       },
       "food": {
         "type": "number",
-        "description": "Food yield provided by this building per turn"
+        "title": "Food",
+        "description": "Food yield provided by this building per turn."
       },
       "gold": {
         "type": "number",
-        "description": "Gold yield provided by this building per turn"
+        "title": "Gold",
+        "description": "Gold yield provided by this building per turn."
       },
       "science": {
         "type": "number",
-        "description": "Science yield provided by this building per turn"
+        "title": "Science",
+        "description": "Science yield provided by this building per turn."
       },
       "culture": {
         "type": "number",
-        "description": "Culture yield provided by this building per turn"
+        "title": "Culture",
+        "description": "Culture yield provided by this building per turn."
       },
       "happiness": {
         "type": "number",
-        "description": "Happiness provided by this building"
+        "title": "Happiness",
+        "description": "Happiness provided by this building."
       },
       "faith": {
         "type": "number",
-        "description": "Faith yield provided by this building per turn"
+        "title": "Faith",
+        "description": "Faith yield provided by this building per turn."
       },
-
-      "uniques": { "$ref": "Uniques.schema.json" },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
-
+      "uniques": {
+        "$ref": "Uniques.schema.json",
+        "description": "Unique effects provided by this building."
+      },
+      "civilopediaText": {
+        "$ref": "CivilopediaText.schema.json",
+        "title": "Civilopedia Text",
+        "description": "Civilopedia entry for this building."
+      },
       "requiredTech": {
         "type": "string",
-        "description": "The tech that should be researched before this building may be built. Must be in Techs.json"
+        "title": "Required Tech",
+        "description": "The tech that should be researched before this building may be built. Must be in Techs.json."
       },
       "cost": {
         "type": "integer",
+        "title": "Cost",
         "default": -1,
-        "description": "Amount of production required to build the building. If -1, the buildingCost from requiredTech column is used"
+        "description": "Amount of production required to build the building. If -1, the buildingCost from requiredTech column is used."
       },
       "maintenance": {
         "type": "integer",
-        "description": "Gold upkeep per turn for this building"
+        "title": "Maintenance",
+        "description": "Gold upkeep per turn for this building."
       },
-      "percentStatBonus": { "$ref": "Stats.schema.json" },
+      "percentStatBonus": {
+        "$ref": "Stats.schema.json",
+        "title": "Percent Stat Bonus",
+        "description": "Percent-based stat bonuses provided by this building."
+      },
       "specialistSlots": {
         "type": "object",
-        "additionalProperties": { "type": "integer" },
+        "title": "Specialist Slots",
+        "additionalProperties": {
+          "type": "integer"
+        },
         "description": "How many specialists of each type does this building allow for. Key must be name of existing specialist."
       },
       "greatPersonPoints": {
         "type": "object",
-        "additionalProperties": { "type": "integer" },
+        "title": "Great Person Points",
+        "additionalProperties": {
+          "type": "integer"
+        },
         "description": "Which Great Person Points this building generates per turn. Key must be name of Great Person unit."
       },
       "hurryCostModifier": {
         "type": "number",
-        "description": "When this building is bought using gold or faith, the price is increased by this much percent"
+        "title": "Hurry Cost Modifier",
+        "description": "When this building is bought using gold or faith, the price is increased by this much percent."
       },
       "isWonder": {
         "type": "boolean",
-        "description": "Whether this building is a global wonder",
+        "title": "Is Wonder",
+        "description": "Whether this building is a global wonder.",
         "default": false
       },
       "isNationalWonder": {
         "type": "boolean",
-        "description": "Whether this building is a national wonder",
+        "title": "Is National Wonder",
+        "description": "Whether this building is a national wonder.",
         "default": false
       },
       "requiredBuilding": {
         "type": "string",
-        "description": "A building that has to be built before this building can be built. Must be in Buildings.json"
+        "title": "Required Building",
+        "description": "A building that has to be built before this building can be built. Must be in Buildings.json."
       },
       "requiredResource": {
         "type": "string",
-        "description": "The resource that is consumed when building this building. Must be in TileResources.json"
+        "title": "Required Resource",
+        "description": "The resource that is consumed when building this building. Must be in TileResources.json."
       },
       "requiredNearbyImprovedResources": {
         "type": "array",
-        "items": { "type": "string" },
-        "uniqueItems": true
+        "title": "Required Nearby Improved Resources",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true,
+        "description": "List of improved resources that must be nearby for this building to be constructed."
       },
       "cityStrength": {
         "description": "Strength bonus the city in which this building is built receives.",
+        "title": "City Strength",
         "type": "number",
         "default": 0
       },
       "cityHealth": {
         "description": "Health bonus the city in which this building is built receives.",
+        "title": "City Health",
         "type": "integer",
         "default": 0
       },
       "uniqueTo": {
         "type": "string",
+        "title": "Unique To",
         "description": "Designates that only this nation can build this unit. Must be exact name of existing nation."
       },
       "replaces": {
         "type": "string",
+        "title": "Replaces",
         "description": "For unique units: the name of the original unit that this unit replaces for the uniqueTo nation."
       },
-
       "quote": {
         "type": "string",
-        "description": "Quote that will be displayed for Wonders in the 'construction completed' popup"
+        "title": "Quote",
+        "description": "Quote that will be displayed for Wonders in the 'construction completed' popup."
       },
       "replacementTextForUniques": {
         "type": "string",
+        "title": "Replacement Text For Uniques",
         "description": "Freeform text that will be shown to users, overriding the list of uniques."
       }
     },
-    "required": ["name"],
+    "required": [
+      "name"
+    ],
     "additionalProperties": false
   }
 }

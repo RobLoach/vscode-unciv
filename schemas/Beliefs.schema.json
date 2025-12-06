@@ -9,9 +9,11 @@
     "properties": {
       "name": {
         "type": "string",
-        "title": "Name"
+        "title": "Name",
+        "description": "The name of the Belief."
       },
       "type": {
+        "title": "Type",
         "enum": ["Pantheon", "Founder", "Follower", "Enhancer"],
         "default": "Pantheon"
       },

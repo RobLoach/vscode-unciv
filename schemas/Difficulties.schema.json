@@ -8,7 +8,9 @@
     "title": "Difficulty",
     "description": "A Difficulty that will be available within the Ruleset.",
     "type": "object",
-    "required": ["name"],
+    "required": [
+      "name"
+    ],
     "properties": {
       "name": {
         "type": "string",
@@ -83,7 +85,9 @@
       },
       "playerBonusStartingUnits": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "default": [],
         "title": "Player Bonus Starting Units",
         "description": "Units given to human players at the start. Can also be 'Era Starting Unit', which maps to startingMilitaryUnit of the Eras file. All other units must be in Units.json. Applies only to human player civs."
@@ -138,21 +142,27 @@
       },
       "aiFreeTechs": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "default": [],
         "title": "AI Free Techs",
         "description": "Technologies granted to AI at the start."
       },
       "aiMajorCivBonusStartingUnits": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "default": [],
         "title": "AI Major Civ Bonus Starting Units",
         "description": "Units given to AI major civilizations at the start."
       },
       "aiCityStateBonusStartingUnits": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "default": [],
         "title": "AI City-State Bonus Starting Units",
         "description": "Units given to AI city-states at the start."
@@ -175,8 +185,12 @@
         "title": "Clear Barbarian Camp Reward",
         "description": "Gold reward for clearing a barbarian camp."
       },
-      "uniques": { "$ref": "Uniques.schema.json" },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+      "uniques": {
+        "$ref": "Uniques.schema.json"
+      },
+      "civilopediaText": {
+        "$ref": "CivilopediaText.schema.json"
+      }
     },
     "additionalProperties": false
   }
