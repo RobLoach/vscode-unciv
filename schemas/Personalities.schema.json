@@ -29,7 +29,6 @@
         "description": "Amount of focus on the stat the computer player will have on production. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Production",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "food": {
@@ -37,7 +36,6 @@
         "description": "Amount of focus on the stat the computer player will have on food. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Food",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "gold": {
@@ -45,7 +43,6 @@
         "description": "Amount of focus on the stat the computer player will have on gold. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Gold",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "science": {
@@ -53,7 +50,6 @@
         "description": "Amount of focus on the stat the computer player will have on science. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Science",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "culture": {
@@ -61,7 +57,6 @@
         "description": "Amount of focus on the stat the computer player will have on culture. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Culture",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "happiness": {
@@ -69,7 +64,6 @@
         "description": "Amount of focus on the stat the computer player will have on happiness. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Happiness",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "faith": {
@@ -77,7 +71,6 @@
         "description": "Amount of focus on the stat the computer player will have on faith. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Faith",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "military": {
@@ -85,7 +78,6 @@
         "description": "Amount of focus on the stat the computer player will have on military power. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Military",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "aggressive": {
@@ -93,7 +85,6 @@
         "description": "Amount of focus on the stat the computer player will have on aggressiveness. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Aggressive",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "declareWar": {
@@ -101,7 +92,6 @@
         "description": "Amount of focus on the stat the computer player will have on declaring war. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Declare War",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "commerce": {
@@ -109,7 +99,6 @@
         "description": "Amount of focus on the stat the computer player will have on commerce. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Commerce",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "diplomacy": {
@@ -117,7 +106,6 @@
         "description": "Amount of focus on the stat the computer player will have on diplomacy. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Diplomacy",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "loyal": {
@@ -125,7 +113,6 @@
         "description": "Amount of focus on the stat the computer player will have on loyalty. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Loyal",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "expansion": {
@@ -133,7 +120,6 @@
         "description": "Amount of focus on the stat the computer player will have on expansion. Typically ranges from 0 (no focus) to 10 (double focus)",
         "title": "Expansion",
         "minimum": 0,
-        "maximum": 10,
         "default": 5
       },
       "priorities": {
