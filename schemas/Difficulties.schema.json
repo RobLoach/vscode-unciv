@@ -135,7 +135,7 @@
         "description": "Multiplier for AI unit maintenance costs."
       },
       "aiUnitSupplyModifier": {
-        "type": "integer",
+        "type": "number",
         "default": 5,
         "title": "AI Unit Supply Modifier",
         "description": "Modifier for the number of units the AI can supply."
