@@ -18,37 +18,55 @@
     "techsToRemove": {
       "title": "Technologies To Remove",
       "type": "array",
-      "items": { "type": "string", "title": "Technology to Remove", "description": "A technology that will be removed from the ruleset." },
+      "items": {
+        "type": "string",
+        "title": "Technology to Remove",
+        "description": "A technology that will be removed from the ruleset."
+      },
       "description": "List of Technologies or technologyFilter to remove (isBaseRuleset=false only)."
     },
     "buildingsToRemove": {
       "title": "Buildings To Remove",
       "type": "array",
-      "items": { "type": "string", "examples": ["Utopia Project", "National Treasury"] },
+      "items": {
+        "type": "string",
+        "examples": [
+          "Utopia Project",
+          "National Treasury"
+        ]
+      },
       "description": "List of Buildings, Wonders or buildingFilter to remove (isBaseRuleset=false only)."
     },
     "unitsToRemove": {
       "title": "Units To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Units or unitFilter to remove (isBaseRuleset=false only)."
     },
     "nationsToRemove": {
       "title": "Nations To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Nations or nationFilter to remove (isBaseRuleset=false only)."
     },
     "policyBranchesToRemove": {
       "title": "Policy Branches To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Policy Branches to remove (isBaseRuleset=false only)."
     },
     "policiesToRemove": {
       "title": "Policies To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of Policies to remove (isBaseRuleset=false only)."
     },
     "constants": {
@@ -150,7 +168,11 @@
           "type": "object",
           "description": "Unit upgrade cost sub-structure.",
           "properties": {
-            "base": { "title": "Base", "type": "number", "default": 10 },
+            "base": {
+              "title": "Base",
+              "type": "number",
+              "default": 10
+            },
             "perProduction": {
               "title": "Per Production",
               "type": "number",
@@ -161,8 +183,16 @@
               "type": "number",
               "default": 0
             },
-            "exponent": { "title": "Exponent", "type": "number", "default": 1 },
-            "roundTo": { "title": "Round To", "type": "integer", "default": 5 }
+            "exponent": {
+              "title": "Exponent",
+              "type": "number",
+              "default": 1
+            },
+            "roundTo": {
+              "title": "Round To",
+              "type": "integer",
+              "default": 5
+            }
           },
           "additionalProperties": false
         },
@@ -277,7 +307,10 @@
         },
         "maxImprovementTechErasForward": {
           "title": "Max Improvement Tech Eras Forward",
-          "type": ["integer", "null"],
+          "type": [
+            "integer",
+            "null"
+          ],
           "default": null,
           "description": "Improvement picker skips improvements whose tech requirement is more advanced than current Era + this value."
         },

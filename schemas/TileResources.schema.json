@@ -23,7 +23,9 @@
       },
       "terrainsCanBeFoundOn": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "uniqueItems": true,
         "title": "Terrains",
         "description": "List of terrain types where this resource can be found."
@@ -34,20 +36,29 @@
         "description": "The improvement required to obtain this resource. Must be in TileImprovements.json."
       },
       "resourceType": {
-        "enum": ["Strategic", "Luxury", "Bonus"],
+        "enum": [
+          "Strategic",
+          "Luxury",
+          "Bonus"
+        ],
         "default": "Bonus",
         "title": "Resource Type",
         "description": "The type of resource: Strategic, Luxury, or Bonus."
       },
       "revealedBy": {
         "type": "string",
-        "examples": ["Iron Working", "Archaeology"],
+        "examples": [
+          "Iron Working",
+          "Archaeology"
+        ],
         "title": "Revealed By",
         "description": "The technology or condition that reveals this resource."
       },
       "improvedBy": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "uniqueItems": true,
         "title": "Improved By",
         "description": "The improvements required for obtaining this resource. Must be in TileImprovements.json."
@@ -120,7 +131,9 @@
         "description": "Civilopedia entry describing this resource."
       }
     },
-    "required": ["name"],
+    "required": [
+      "name"
+    ],
     "additionalProperties": false
   },
   "$defs": {
@@ -129,11 +142,27 @@
       "type": "object",
       "description": "Specifies the amount of resources on a tile, categorized as sparse, default, or abundant.",
       "properties": {
-        "sparse": { "type": "number", "title": "Sparse" },
-        "default": { "type": "number", "title": "Default" },
-        "abundant": { "type": "number", "Title": "Abundant" }
+        "sparse": {
+          "type": "number",
+          "title": "Sparse",
+          "description": "The amount of resources on a tile when the amount is considered sparse."
+        },
+        "default": {
+          "type": "number",
+          "title": "Default",
+          "description": "The amount of resources on a tile when it's the default amount."
+        },
+        "abundant": {
+          "type": "number",
+          "Title": "Abundant",
+          "description": "The amount of resources on a tile when the amount is considered abundant."
+        }
       },
-      "required": ["sparse", "default", "abundant"],
+      "required": [
+        "sparse",
+        "default",
+        "abundant"
+      ],
       "additionalProperties": false
     }
   }

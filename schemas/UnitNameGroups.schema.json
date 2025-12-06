@@ -11,24 +11,39 @@
         "type": "string",
         "title": "Name",
         "description": "The name of the unit name group.",
-        "examples": ["General", "Admiral", "Artist","Merchant", "Engineer", "Scientist"]
+        "examples": [
+          "General",
+          "Admiral",
+          "Artist",
+          "Merchant",
+          "Engineer",
+          "Scientist"
+        ]
       },
       "unitNames": {
         "type": "array",
         "title": "Unit Names",
-        "description": "A list of names that apply to the group. For example: Alan Turing.",
+        "description": "A list of names that apply to the group.",
         "items": {
           "type": "string",
           "title": "Unit Name",
           "description": "A unit name that can be assigned to applicable units.",
-          "examples": ["Albert Einstein"]
+          "examples": [
+            "Alan Turing"
+          ]
         },
         "default": []
       },
-      "uniques": { "$ref": "Uniques.schema.json" },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+      "uniques": {
+        "$ref": "Uniques.schema.json"
+      },
+      "civilopediaText": {
+        "$ref": "CivilopediaText.schema.json"
+      }
     },
-    "required": ["name"],
+    "required": [
+      "name"
+    ],
     "additionalProperties": false
   }
 }

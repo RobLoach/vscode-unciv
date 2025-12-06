@@ -87,13 +87,17 @@
       "specialistSlots": {
         "type": "object",
         "title": "Specialist Slots",
-        "additionalProperties": { "type": "integer" },
+        "additionalProperties": {
+          "type": "integer"
+        },
         "description": "How many specialists of each type does this building allow for. Key must be name of existing specialist."
       },
       "greatPersonPoints": {
         "type": "object",
         "title": "Great Person Points",
-        "additionalProperties": { "type": "integer" },
+        "additionalProperties": {
+          "type": "integer"
+        },
         "description": "Which Great Person Points this building generates per turn. Key must be name of Great Person unit."
       },
       "hurryCostModifier": {
@@ -126,7 +130,9 @@
       "requiredNearbyImprovedResources": {
         "type": "array",
         "title": "Required Nearby Improved Resources",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "uniqueItems": true,
         "description": "List of improved resources that must be nearby for this building to be constructed."
       },
@@ -163,7 +169,9 @@
         "description": "Freeform text that will be shown to users, overriding the list of uniques."
       }
     },
-    "required": ["name"],
+    "required": [
+      "name"
+    ],
     "additionalProperties": false
   }
 }

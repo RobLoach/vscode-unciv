@@ -20,8 +20,12 @@
       "title": "Unit Uniques",
       "description": "List of unique abilities that apply to each unit."
     },
-    "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+    "civilopediaText": {
+      "$ref": "CivilopediaText.schema.json"
+    }
   },
-  "required": ["name"],
+  "required": [
+    "name"
+  ],
   "additionalProperties": false
 }

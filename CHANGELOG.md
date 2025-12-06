@@ -7,6 +7,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.1.6]
 
 - Add titles and descriptions for all properties
+- Add examples across all schemas
 
 ## [0.1.5]
 

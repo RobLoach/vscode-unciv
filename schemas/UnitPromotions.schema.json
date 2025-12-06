@@ -42,7 +42,20 @@
         "items": {
           "type": "string",
           "examples": [
-            "Civilian", "Archery", "Sword", "Gunpowder", "Ranged Gunpowder", "Mounted", "Armored", "Siege", "Civilian Water", "Melee Water", "Ranged Water", "Fighter", "Bomber", "Missle"
+            "Civilian",
+            "Archery",
+            "Sword",
+            "Gunpowder",
+            "Ranged Gunpowder",
+            "Mounted",
+            "Armored",
+            "Siege",
+            "Civilian Water",
+            "Melee Water",
+            "Ranged Water",
+            "Fighter",
+            "Bomber",
+            "Missle"
           ]
         },
         "uniqueItems": true

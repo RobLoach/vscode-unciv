@@ -107,7 +107,7 @@
       "uniqueTo": {
         "type": "string",
         "title": "Unique To",
-        "description": "Designates that only this nation can build this unit. Must be exact name of existing nation."
+        "description": "Designates that only this nation can build this unit. Must be exact name of existing nation in Nations.json."
       },
       "replaces": {
         "type": "string",
@@ -116,7 +116,6 @@
       },
       "uniques": {
         "$ref": "Uniques.schema.json",
-        "title": "Uniques",
         "description": "Unique properties for this unit."
       },
       "promotions": {
@@ -133,7 +132,42 @@
       "attackSound": {
         "type": "string",
         "title": "Attack Sound",
-        "description": "The sound that is played when the unit attacks."
+        "description": "The sound that is played when the unit attacks.",
+        "examples": [
+          "arrow",
+          "artillery",
+          "bombard",
+          "bombing",
+          "cannon",
+          "chimes",
+          "choir",
+          "click",
+          "coin",
+          "construction",
+          "elephant",
+          "fortify",
+          "gdrAttack",
+          "horse",
+          "jetgun",
+          "machinegun",
+          "metalhit",
+          "missile",
+          "nonmetalhit",
+          "nuke",
+          "paper",
+          "policy",
+          "promote",
+          "setup",
+          "shipguns",
+          "shot",
+          "slider",
+          "swap",
+          "tankshot",
+          "throw",
+          "torpedo",
+          "upgrade",
+          "whoosh"
+        ]
       },
       "replacementTextForUniques": {
         "type": "string",
@@ -142,7 +176,6 @@
       },
       "civilopediaText": {
         "$ref": "CivilopediaText.schema.json",
-        "title": "Civilopedia Text",
         "description": "Civilopedia entry describing this unit."
       }
     },
