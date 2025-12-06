@@ -23,12 +23,29 @@
       "unitType": {
         "type": "string",
         "title": "Unit Type",
-        "description": "The type of the unit. Must be in UnitTypes.json."
+        "description": "The type of the unit. Must be in UnitTypes.json.",
+        "examples": [
+          "Civilian",
+          "Archery",
+          "Sword",
+          "Gunpowder",
+          "Ranged Gunpowder",
+          "Mounted",
+          "Armored",
+          "Siege",
+          "Civilian Water",
+          "Melee Water",
+          "Ranged Water",
+          "Fighter",
+          "Bomber",
+          "Missle"
+        ]
       },
       "movement": {
         "type": "integer",
         "title": "Movement",
-        "description": "The amount of movement points the unit has."
+        "description": "The amount of movement points the unit has.",
+        "default": 0
       },
       "strength": {
         "type": "integer",

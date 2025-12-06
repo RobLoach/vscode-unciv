@@ -22,8 +22,7 @@
           "We have found survivors in the ruins! Population added to [cityName].",
           "We have discovered the lost technology of [techName] in the ruins!",
           "Our unit finds advanced weaponry hidden in the ruins!",
-          "We have found a crudely-drawn map in the ruins!",
-          ""
+          "We have found a crudely-drawn map in the ruins!"
         ]
       },
       "weight": {

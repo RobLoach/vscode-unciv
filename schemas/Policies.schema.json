@@ -7,19 +7,37 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string" },
-      "era": {
+      "name": {
         "type": "string",
-        "description": "Unlocking era as defined in Eras.json"
+        "title": "Name",
+        "description": "The name of the Policy."
+      },
+      "era": {
+        "title": "Era",
+        "type": "string",
+        "description": "Unlocking era as defined in Eras.json",
+        "examples": [
+          "Ancient era",
+          "Classical era",
+          "Medieval era",
+          "Renaissance era",
+          "Industrial era",
+          "Modern era",
+          "Atomic era",
+          "Information era",
+          "Future era"
+        ]
       },
       "priorities": {
-        "type": "object",
-        "description": "Priorities for each victory type.",
-        "additionalProperties": true
+        "$ref": "Priorities.schema.json",
+        "description": "Priorities for each victory type."
       },
-      "uniques": { "$ref": "Uniques.schema.json" },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
-
+      "uniques": {
+        "$ref": "Uniques.schema.json"
+      },
+      "civilopediaText": {
+        "$ref": "CivilopediaText.schema.json"
+      },
       "policies": {
         "title": "Policies",
         "description": "List of member policies and branch 'finisher'.",
@@ -29,30 +47,45 @@
           "description": "Member policy.",
           "additionalProperties": false,
           "properties": {
-            "name": { "type": "string" },
+            "name": {
+              "type": "string"
+            },
             "row": {
+              "title": "Row",
               "type": "integer",
               "description": "Placement in UI, each unit approximately half the icon size"
             },
             "column": {
+              "title": "Column",
               "type": "integer",
               "description": "Placement in UI, each unit approximately half the icon size"
             },
             "requires": {
               "type": "array",
-              "items": { "type": "string" },
+              "items": {
+                "type": "string"
+              },
               "description": "List of prerequisite policy names",
               "uniqueItems": true
             },
-            "uniques": { "$ref": "Uniques.schema.json" },
-            "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
+            "uniques": {
+              "$ref": "Uniques.schema.json"
+            },
+            "civilopediaText": {
+              "$ref": "CivilopediaText.schema.json"
+            }
           },
-          "required": ["name"]
+          "required": [
+            "name"
+          ]
         },
         "uniqueItems": true
       }
     },
-    "required": ["name", "era"],
+    "required": [
+      "name",
+      "era"
+    ],
     "additionalProperties": false
   }
 }

@@ -100,12 +100,12 @@
         "default": 0
       },
       "majorDepositAmount": {
-        "$ref": "TileResourcesAmount.schema.json",
+        "$ref": "#/$defs/depositAmount",
         "title": "Major Deposit Amount",
         "description": "Amount of resource in a major deposit."
       },
       "minorDepositAmount": {
-        "$ref": "TileResourcesAmount.schema.json",
+        "$ref": "#/$defs/depositAmount",
         "title": "Minor Deposit Amount",
         "description": "Amount of resource in a minor deposit."
       },
@@ -122,5 +122,19 @@
     },
     "required": ["name"],
     "additionalProperties": false
+  },
+  "$defs": {
+    "depositAmount": {
+      "title": "Deposit Amount",
+      "type": "object",
+      "description": "Specifies the amount of resources on a tile, categorized as sparse, default, or abundant.",
+      "properties": {
+        "sparse": { "type": "number", "title": "Sparse" },
+        "default": { "type": "number", "title": "Default" },
+        "abundant": { "type": "number", "Title": "Abundant" }
+      },
+      "required": ["sparse", "default", "abundant"],
+      "additionalProperties": false
+    }
   }
 }

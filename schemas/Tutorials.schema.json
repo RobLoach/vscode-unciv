@@ -6,14 +6,14 @@
   "items": {
     "type": "object",
     "properties": {
-      "name": { "type": "string", "description": "The Tutorial's entry name." },
-      "civilopediaText": { "$ref": "CivilopediaText.schema.json" },
+      "name": { "type": "string", "description": "The name for the Tutorial.", "title": "Name" },
       "steps": {
         "type": "array",
         "items": { "type": "string" },
         "description": "An array of step descriptions for the tutorial."
       },
-      "uniques": { "$ref": "Uniques.schema.json" }
+      "uniques": { "$ref": "Uniques.schema.json" },
+      "civilopediaText": { "$ref": "CivilopediaText.schema.json" }
     },
     "required": ["name"],
     "additionalProperties": false

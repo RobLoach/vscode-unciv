@@ -10,15 +10,15 @@
       "name": {
         "type": "string",
         "title": "Name",
-        "description": "Used for triggering via 'Triggers a [event] event' unique"
+        "description": "Used for triggering via 'Triggers a [event] event' unique."
       },
       "text": {
         "type": "string",
-        "description": "Flavor text displayed to user"
+        "description": "Flavor text displayed to user."
       },
       "presentation": {
         "enum": ["None", "Alert", "Floating"],
-        "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators",
+        "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators.",
         "default": "None"
       },
       "uniques": { "$ref": "Uniques.schema.json" },
@@ -27,7 +27,7 @@
       "choices": {
         "type": "array",
         "title": "Choices",
-        "description": "User can choose to trigger one of the viable choices",
+        "description": "User can choose to trigger one of the viable choices.",
         "items": {
           "properties": {
             "text": { "type": "string", "title": "Text", "description": "The text that is displayed to the user for the choice." },

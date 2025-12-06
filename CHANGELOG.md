@@ -6,7 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.1.6]
 
-- Add titles and descriptions for Difficulties
+- Add titles and descriptions for all properties
 
 ## [0.1.5]
 

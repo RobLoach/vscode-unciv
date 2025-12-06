@@ -24,7 +24,7 @@
     "buildingsToRemove": {
       "title": "Buildings To Remove",
       "type": "array",
-      "items": { "type": "string" },
+      "items": { "type": "string", "examples": ["Utopia Project", "National Treasury"] },
       "description": "List of Buildings, Wonders or buildingFilter to remove (isBaseRuleset=false only)."
     },
     "unitsToRemove": {

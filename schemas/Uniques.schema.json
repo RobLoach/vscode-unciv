@@ -8,7 +8,7 @@
     "type": "string",
     "title": "Unique",
     "description": "A unique that is applied to the object. See https://yairm210.github.io/Unciv/Modders/uniques/",
-    "$comment": "TODO: Add a `allOf` condition to validate the uniques. Also find a way to automate bringing in the examples.",
+    "$comment": "TODO: Add validation with `allOf` conditions. TODO: Find a way to automate bringing in the examples.",
     "examples": [
       "[stats]",
       "[stats] [cityFilter]",

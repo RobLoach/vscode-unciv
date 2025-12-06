@@ -20,7 +20,9 @@
       "adjective": {
         "title": "Leader Adjectives",
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "uniqueItems": true,
         "description": "The adjectives for the leader. Currently not in use."
       },
@@ -38,7 +40,13 @@
         "type": "string",
         "title": "City State Type",
         "description": "Type of city state, if applicable. See CityStateTypes.json",
-        "examples": ["Cultured", "Maritime", "Mercantile", "Religious", "Militaristic"]
+        "examples": [
+          "Cultured",
+          "Maritime",
+          "Mercantile",
+          "Religious",
+          "Militaristic"
+        ]
       },
       "outerColor": {
         "$ref": "Color.schema.json",
@@ -62,7 +70,12 @@
       },
       "startBias": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string",
+          "examples": [
+            "Avoid [Tundra]", "Avoid [Desert]", "Coast", "Grassland"
+          ]
+        },
         "uniqueItems": true,
         "title": "Start Bias",
         "description": "Types of tiles where the nation is more likely to start."
@@ -129,14 +142,18 @@
       },
       "cities": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "uniqueItems": true,
         "title": "City Names",
         "description": "Ordered list of city names unique to the nation, starting with the capital."
       },
       "spyNames": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "uniqueItems": true,
         "title": "Spy Names",
         "description": "List of names for spies belonging to the nation."
@@ -146,7 +163,11 @@
         "title": "Favored Religion",
         "description": "The religion most favored by this nation.",
         "default": "",
-        "examples": ["Islam", "Buddhism", "Taoism"]
+        "examples": [
+          "Islam",
+          "Buddhism",
+          "Taoism"
+        ]
       },
       "uniqueName": {
         "type": "string",
@@ -160,11 +181,13 @@
       },
       "civilopediaText": {
         "$ref": "CivilopediaText.schema.json",
-        "title": "Civilopedia Text",
         "description": "Additional descriptive text for the nation in the Civilopedia."
       }
     },
-    "required": ["name", "outerColor"],
+    "required": [
+      "name",
+      "outerColor"
+    ],
     "additionalProperties": false
   }
 }
