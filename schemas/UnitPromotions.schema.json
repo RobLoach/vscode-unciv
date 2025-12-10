@@ -64,14 +64,14 @@
         "title": "Row",
         "type": "integer",
         "minimum": 0,
-        "description": "Used as **column** hint in the promotion picker screen. Not a direct position, it is used.",
+        "description": "Used as **row** hint in the promotion picker screen.",
         "default": 0
       },
       "column": {
         "title": "Column",
         "type": "integer",
         "minimum": 0,
-        "description": "Used as **row** hint in the promotion picker screen. Not a direct position, it is used to sort before an automatic distribution.",
+        "description": "Used as **column** hint in the promotion picker screen.",
         "default": 0
       },
       "uniques": {

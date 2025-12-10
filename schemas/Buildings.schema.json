@@ -90,7 +90,7 @@
         "additionalProperties": {
           "type": "integer"
         },
-        "description": "How many specialists of each type does this building allow for. Key must be name of existing specialist."
+        "description": "How many specialists of each type does this building allow for. Key must be name of existing specialist, as defined in Specialists.json."
       },
       "greatPersonPoints": {
         "type": "object",
@@ -151,17 +151,17 @@
       "uniqueTo": {
         "type": "string",
         "title": "Unique To",
-        "description": "Designates that only this nation can build this unit. Must be exact name of existing nation."
+        "description": "If supplied, only the nation with this name can build this building. Must be in Nations.json."
       },
       "replaces": {
         "type": "string",
         "title": "Replaces",
-        "description": "For unique units: the name of the original unit that this unit replaces for the uniqueTo nation."
+        "description": "The name of a building that should be replaced by this building. Must be in Buildings.json."
       },
       "quote": {
         "type": "string",
         "title": "Quote",
-        "description": "Quote that will be displayed for Wonders in the 'construction completed' popup."
+        "description": "If this building is a wonder, this string will be shown on the completion popup."
       },
       "replacementTextForUniques": {
         "type": "string",

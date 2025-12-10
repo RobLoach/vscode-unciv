@@ -41,7 +41,9 @@
       "title": "Units To Remove",
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
+        "title": "Unit to Remove",
+        "description": "A unit that will be removed from the ruleset."
       },
       "description": "List of Units or unitFilter to remove (isBaseRuleset=false only)."
     },
@@ -49,7 +51,9 @@
       "title": "Nations To Remove",
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
+        "title": "Nation to Remove",
+        "description": "A nation that will be removed from the ruleset."
       },
       "description": "List of Nations or nationFilter to remove (isBaseRuleset=false only)."
     },

@@ -47,26 +47,28 @@
       },
       "techs": {
         "type": "array",
-        "title": "Techs",
-        "description": "List of techs in this column.",
+        "title": "Technologies",
+        "description": "List of technologies that are presented in this column.",
         "items": {
           "type": "object",
           "properties": {
             "name": {
               "type": "string",
               "title": "Name",
-              "description": "The name of the technology."
+              "description": "The name of the technology.",
+              "examples": [
+                "Agriculture", "Animal Husbandry", "Archery", "Bronze Working", "Calendar", "Masonry"
+              ]
             },
             "row": {
               "type": "integer",
-              "minimum": 1,
               "title": "Row",
-              "description": "Vertical placement in the Tech Tree, must be unique per column. 1 is the topmost tech."
+              "description": "Vertical placement in the Tech Tree, must be unique per column."
             },
             "cost": {
               "type": "integer",
               "title": "Cost",
-              "description": "Science cost of this tech. Overrides the column techCost."
+              "description": "Science cost of this technology. Overrides the column techCost."
             },
             "uniques": {
               "$ref": "Uniques.schema.json",
@@ -90,7 +92,7 @@
             "quote": {
               "type": "string",
               "title": "Quote",
-              "description": "Text that is presented to the player when they research this technology."
+              "description": "Text that is presented to the player when they finish researching this technology."
             }
           },
           "required": ["name", "row"],

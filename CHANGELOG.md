@@ -4,6 +4,14 @@ All notable changes to the "unciv" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.1]
+
+- Fix Atlases.json being considered valid JSON by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/7
+- Add Uniques to Specialists by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/12
+- Add color property to Ruins schema by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/11
+- Remove maximum limits for personality stats by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/10
+- Change aiUnitSupplyModifier type from integer to number by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/9
+
 ## [1.0.0]
 
 - Add titles and descriptions for all properties

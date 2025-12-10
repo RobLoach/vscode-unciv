@@ -29,7 +29,7 @@
           "title": "Unit Name",
           "description": "A unit name that can be assigned to applicable units.",
           "examples": [
-            "Alan Turing"
+            "Alan Turing", "Isaac Newton", "Albert Einstein", "Aristotle", "Johannes Gutenberg", "Charles Darwin", "Galileo Galilei", "Nelson Mandela"
           ]
         },
         "default": []

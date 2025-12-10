@@ -50,7 +50,8 @@
       "minimumCivs": {
         "type": "integer",
         "default": 1,
-        "description": "Minimum number of Civs needed to start the quest. Only meaningful for type = Global."
+        "description": "Minimum number of Civs needed to start the quest. Only meaningful for type = Global.",
+        "minimum": 0
       },
       "weightForCityStateType": {
         "type": "object",
