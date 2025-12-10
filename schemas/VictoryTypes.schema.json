@@ -77,7 +77,7 @@
         "description": "List of milestones that must be accomplished to win. See https://yairm210.github.io/Unciv/Modders/Mod-file-structure/5-Miscellaneous-JSON-files/#milestones"
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json"
+        "$ref": "refs/CivilopediaText.schema.json"
       }
     },
     "required": [

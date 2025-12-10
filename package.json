@@ -16,7 +16,7 @@
     "build": "npx @vscode/vsce package",
     "postbuild": "code --install-extension *.vsix --force",
     "pub": "npx @vscode/vsce publish",
-    "test": "",
+    "test": "cd schemas && ajv compile -s \"*.schema.json\" -r refs/Uniques.schema.json -r refs/Priorities.schema.json -r refs/Color.schema.json -r refs/CivilopediaText.schema.json -r refs/Stats.schema.json",
     "prettier": "npx prettier --write schemas/*.json *.json"
   },
   "categories": [
@@ -184,5 +184,9 @@
         "url": "./schemas/VictoryTypes.schema.json"
       }
     ]
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-cli": "^5.0.0"
   }
 }

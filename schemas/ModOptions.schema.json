@@ -12,7 +12,7 @@
     },
     "uniques": {
       "title": "Uniques",
-      "$ref": "Uniques.schema.json",
+      "$ref": "refs/Uniques.schema.json",
       "description": "Mod-wide special uniques."
     },
     "techsToRemove": {

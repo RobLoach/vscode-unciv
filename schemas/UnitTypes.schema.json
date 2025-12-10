@@ -30,10 +30,10 @@
         "description": "How the unit should traverse through the world."
       },
       "uniques": {
-        "$ref": "Uniques.schema.json"
+        "$ref": "refs/Uniques.schema.json"
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json"
+        "$ref": "refs/CivilopediaText.schema.json"
       }
     },
     "required": [

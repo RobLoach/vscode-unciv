@@ -26,16 +26,17 @@
         "default": "None"
       },
       "uniques": {
-        "$ref": "Uniques.schema.json"
+        "$ref": "refs/Uniques.schema.json"
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json"
+        "$ref": "refs/CivilopediaText.schema.json"
       },
       "choices": {
         "type": "array",
         "title": "Choices",
         "description": "User can choose to trigger one of the viable choices.",
         "items": {
+          "type": "object",
           "properties": {
             "text": {
               "type": "string",
@@ -43,10 +44,10 @@
               "description": "The text that is displayed to the user for the choice."
             },
             "uniques": {
-              "$ref": "Uniques.schema.json"
+              "$ref": "refs/Uniques.schema.json"
             },
             "civilopediaText": {
-              "$ref": "CivilopediaText.schema.json"
+              "$ref": "refs/CivilopediaText.schema.json"
             },
             "keyShortcut": {
               "type": "string",
@@ -60,8 +61,7 @@
             }
           },
           "required": [
-            "text",
-            "uniques"
+            "text"
           ],
           "additionalProperties": false
         }

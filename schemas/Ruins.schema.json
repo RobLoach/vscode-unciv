@@ -38,7 +38,7 @@
         "description": "The color used for the reward in the Civilopedia (e.g. #FFA040)",
         "default": "#FFEB7F"
       },
-      "uniques": { "$ref": "Uniques.schema.json" },
+      "uniques": { "$ref": "refs/Uniques.schema.json" },
       "excludedDifficulties": {
         "title": "Excluded Difficulties",
         "type": "array",

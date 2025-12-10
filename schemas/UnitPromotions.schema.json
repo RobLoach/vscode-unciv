@@ -75,18 +75,18 @@
         "default": 0
       },
       "uniques": {
-        "$ref": "Uniques.schema.json"
+        "$ref": "refs/Uniques.schema.json"
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json"
+        "$ref": "refs/CivilopediaText.schema.json"
       },
       "outerColor": {
-        "$ref": "Color.schema.json",
+        "$ref": "refs/Color.schema.json",
         "title": "Outer Color: Background",
         "description": "Color of the background."
       },
       "innerColor": {
-        "$ref": "Color.schema.json",
+        "$ref": "refs/Color.schema.json",
         "title": "Inner Color: Icon",
         "description": "Color of the icon."
       }
