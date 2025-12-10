@@ -30,10 +30,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "examples": [
-          "Utopia Project",
-          "National Treasury"
-        ]
+        "examples": ["Utopia Project", "National Treasury"]
       },
       "description": "List of Buildings, Wonders or buildingFilter to remove (isBaseRuleset=false only)."
     },
@@ -311,10 +308,7 @@
         },
         "maxImprovementTechErasForward": {
           "title": "Max Improvement Tech Eras Forward",
-          "type": [
-            "integer",
-            "null"
-          ],
+          "type": ["integer", "null"],
           "default": null,
           "description": "Improvement picker skips improvements whose tech requirement is more advanced than current Era + this value."
         },

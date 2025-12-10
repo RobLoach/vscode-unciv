@@ -75,17 +75,12 @@
               "$ref": "refs/CivilopediaText.schema.json"
             }
           },
-          "required": [
-            "name"
-          ]
+          "required": ["name"]
         },
         "uniqueItems": true
       }
     },
-    "required": [
-      "name",
-      "era"
-    ],
+    "required": ["name", "era"],
     "additionalProperties": false
   }
 }

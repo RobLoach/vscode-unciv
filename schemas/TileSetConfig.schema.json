@@ -41,12 +41,7 @@
           "maximum": 1
         }
       },
-      "required": [
-        "r",
-        "g",
-        "b",
-        "a"
-      ],
+      "required": ["r", "g", "b", "a"],
       "additionalProperties": false
     },
     "fogOfWarColor": {
@@ -75,24 +70,14 @@
           "maximum": 1
         }
       },
-      "required": [
-        "r",
-        "g",
-        "b",
-        "a"
-      ],
+      "required": ["r", "g", "b", "a"],
       "additionalProperties": false
     },
     "fallbackTileSet": {
-      "type": [
-        "string",
-        "null"
-      ],
+      "type": ["string", "null"],
       "title": "Fallback Tile Set",
       "description": "The name of another tileset whose images should be used if this tileset is missing images. Can be set to null to disable the the fallback tileset.",
-      "examples": [
-        "FantasyHex"
-      ]
+      "examples": ["FantasyHex"]
     },
     "tileScale": {
       "type": "number",

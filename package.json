@@ -16,8 +16,8 @@
     "build": "npx @vscode/vsce package",
     "postbuild": "code --install-extension *.vsix --force",
     "pub": "npx @vscode/vsce publish",
-    "test": "cd schemas && ajv compile -s \"*.schema.json\" -r refs/Uniques.schema.json -r refs/Priorities.schema.json -r refs/Color.schema.json -r refs/CivilopediaText.schema.json -r refs/Stats.schema.json",
-    "prettier": "npx prettier --write schemas/*.json *.json"
+    "test": "ajv compile -s \"schemas/*.schema.json\" -r schemas/refs/Uniques.schema.json -r schemas/refs/Priorities.schema.json -r schemas/refs/Color.schema.json -r schemas/refs/CivilopediaText.schema.json -r schemas/refs/Stats.schema.json",
+    "prettier": "npx prettier --write schemas/*.json *.json schemas/refs/*.json"
   },
   "categories": [
     "Other"

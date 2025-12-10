@@ -11,20 +11,10 @@
         "type": "string",
         "title": "Name",
         "description": "The name of the unit type.",
-        "examples": [
-          "Civilian",
-          "Archery",
-          "Mounted",
-          "Armored",
-          "Siege"
-        ]
+        "examples": ["Civilian", "Archery", "Mounted", "Armored", "Siege"]
       },
       "movementType": {
-        "enum": [
-          "Land",
-          "Water",
-          "Air"
-        ],
+        "enum": ["Land", "Water", "Air"],
         "default": "Land",
         "title": "Movement Type",
         "description": "How the unit should traverse through the world."
@@ -36,10 +26,7 @@
         "$ref": "refs/CivilopediaText.schema.json"
       }
     },
-    "required": [
-      "name",
-      "movementType"
-    ],
+    "required": ["name", "movementType"],
     "additionalProperties": false
   }
 }

@@ -179,10 +179,7 @@
         "description": "Civilopedia entry describing this unit."
       }
     },
-    "required": [
-      "name",
-      "unitType"
-    ],
+    "required": ["name", "unitType"],
     "additionalProperties": false
   }
 }

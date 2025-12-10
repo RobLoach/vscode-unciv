@@ -28,9 +28,7 @@
         "$ref": "refs/CivilopediaText.schema.json"
       }
     },
-    "required": [
-      "name"
-    ],
+    "required": ["name"],
     "additionalProperties": false
   }
 }

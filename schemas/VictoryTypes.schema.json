@@ -11,11 +11,7 @@
         "type": "string",
         "title": "Name",
         "description": "Name of the victory",
-        "examples": [
-          "Domination",
-          "Science",
-          "Cultural"
-        ]
+        "examples": ["Domination", "Science", "Cultural"]
       },
       "victoryScreenHeader": {
         "title": "Victory Screen Header",
@@ -80,10 +76,7 @@
         "$ref": "refs/CivilopediaText.schema.json"
       }
     },
-    "required": [
-      "name",
-      "milestones"
-    ],
+    "required": ["name", "milestones"],
     "additionalProperties": false
   }
 }

@@ -17,11 +17,7 @@
         "description": "Flavor text displayed to user."
       },
       "presentation": {
-        "enum": [
-          "None",
-          "Alert",
-          "Floating"
-        ],
+        "enum": ["None", "Alert", "Floating"],
         "description": "Alert indicates a regular popup, None means the choice is made randomly, Floating is for tutorial-style indicators.",
         "default": "None"
       },
@@ -53,23 +49,15 @@
               "type": "string",
               "title": "Keyboard Shortcut",
               "description": "The key that would invoke the given choice. See https://github.com/libgdx/libgdx/blob/master/gdx/src/com/badlogic/gdx/Input.java",
-              "examples": [
-                "A",
-                "B",
-                "C"
-              ]
+              "examples": ["A", "B", "C"]
             }
           },
-          "required": [
-            "text"
-          ],
+          "required": ["text"],
           "additionalProperties": false
         }
       }
     },
-    "required": [
-      "name"
-    ],
+    "required": ["name"],
     "additionalProperties": false
   }
 }

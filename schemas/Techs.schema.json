@@ -57,7 +57,12 @@
               "title": "Name",
               "description": "The name of the technology.",
               "examples": [
-                "Agriculture", "Animal Husbandry", "Archery", "Bronze Working", "Calendar", "Masonry"
+                "Agriculture",
+                "Animal Husbandry",
+                "Archery",
+                "Bronze Working",
+                "Calendar",
+                "Masonry"
               ]
             },
             "row": {

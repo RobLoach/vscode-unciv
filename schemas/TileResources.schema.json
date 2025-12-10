@@ -36,21 +36,14 @@
         "description": "The improvement required to obtain this resource. Must be in TileImprovements.json."
       },
       "resourceType": {
-        "enum": [
-          "Strategic",
-          "Luxury",
-          "Bonus"
-        ],
+        "enum": ["Strategic", "Luxury", "Bonus"],
         "default": "Bonus",
         "title": "Resource Type",
         "description": "The type of resource: Strategic, Luxury, or Bonus."
       },
       "revealedBy": {
         "type": "string",
-        "examples": [
-          "Iron Working",
-          "Archaeology"
-        ],
+        "examples": ["Iron Working", "Archaeology"],
         "title": "Revealed By",
         "description": "The technology or condition that reveals this resource."
       },
@@ -131,9 +124,7 @@
         "description": "Civilopedia entry describing this resource."
       }
     },
-    "required": [
-      "name"
-    ],
+    "required": ["name"],
     "additionalProperties": false
   },
   "$defs": {
@@ -158,11 +149,7 @@
           "description": "The amount of resources on a tile when the amount is considered abundant."
         }
       },
-      "required": [
-        "sparse",
-        "default",
-        "abundant"
-      ],
+      "required": ["sparse", "default", "abundant"],
       "additionalProperties": false
     }
   }

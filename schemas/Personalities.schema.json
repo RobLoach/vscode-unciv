@@ -17,12 +17,7 @@
         "default": "Neutral",
         "description": "The victory type major civilizations will pursue (need not be specified in VictoryTypes.json)",
         "title": "Preferred Victory Type",
-        "examples": [
-          "Scientific",
-          "Cultural",
-          "Domination",
-          "Diplomatic"
-        ]
+        "examples": ["Scientific", "Cultural", "Domination", "Diplomatic"]
       },
       "production": {
         "type": "number",
@@ -133,9 +128,7 @@
         "$ref": "refs/CivilopediaText.schema.json"
       }
     },
-    "required": [
-      "name"
-    ],
+    "required": ["name"],
     "additionalProperties": false
   }
 }

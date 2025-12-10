@@ -62,22 +62,13 @@
         "type": "string",
         "title": "Preferred Victory Type",
         "description": "The victory type most favored by this nation. See VictoryTypes.json.",
-        "examples": [
-          "Domination",
-          "Science",
-          "Cultural"
-        ]
+        "examples": ["Domination", "Science", "Cultural"]
       },
       "startBias": {
         "type": "array",
         "items": {
           "type": "string",
-          "examples": [
-            "Avoid [Tundra]",
-            "Avoid [Desert]",
-            "Coast",
-            "Grassland"
-          ]
+          "examples": ["Avoid [Tundra]", "Avoid [Desert]", "Coast", "Grassland"]
         },
         "uniqueItems": true,
         "title": "Start Bias",
@@ -166,11 +157,7 @@
         "title": "Favored Religion",
         "description": "The religion most favored by this nation.",
         "default": "",
-        "examples": [
-          "Islam",
-          "Buddhism",
-          "Taoism"
-        ]
+        "examples": ["Islam", "Buddhism", "Taoism"]
       },
       "uniqueName": {
         "type": "string",
@@ -187,10 +174,7 @@
         "description": "Additional descriptive text for the nation in the Civilopedia."
       }
     },
-    "required": [
-      "name",
-      "outerColor"
-    ],
+    "required": ["name", "outerColor"],
     "additionalProperties": false
   }
 }

@@ -91,9 +91,7 @@
         "description": "Color of the icon."
       }
     },
-    "required": [
-      "name"
-    ],
+    "required": ["name"],
     "additionalProperties": false
   }
 }

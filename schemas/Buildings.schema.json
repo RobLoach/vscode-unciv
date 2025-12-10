@@ -169,9 +169,7 @@
         "description": "Freeform text that will be shown to users, overriding the list of uniques."
       }
     },
-    "required": [
-      "name"
-    ],
+    "required": ["name"],
     "additionalProperties": false
   }
 }

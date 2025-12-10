@@ -11,12 +11,7 @@
         "type": "string",
         "title": "Name",
         "description": "The name of the Specialist.",
-        "examples": [
-          "Scientist",
-          "Merchant",
-          "Artist",
-          "Engineer"
-        ]
+        "examples": ["Scientist", "Merchant", "Artist", "Engineer"]
       },
       "production": {
         "type": "number",
@@ -74,10 +69,7 @@
       },
       "uniques": { "$ref": "refs/Uniques.schema.json" }
     },
-    "required": [
-      "name",
-      "color"
-    ],
+    "required": ["name", "color"],
     "additionalProperties": false
   }
 }
