@@ -64,7 +64,7 @@
         "description": "The improvements required for obtaining this resource. Must be in TileImprovements.json."
       },
       "improvementStats": {
-        "$ref": "Stats.schema.json",
+        "$ref": "refs/Stats.schema.json",
         "title": "Improvement Stats",
         "description": "Stats provided by the improvement for this resource."
       },
@@ -121,12 +121,12 @@
         "description": "Amount of resource in a minor deposit."
       },
       "uniques": {
-        "$ref": "Uniques.schema.json",
+        "$ref": "refs/Uniques.schema.json",
         "title": "Uniques",
         "description": "Uniques applied to this resource."
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json",
+        "$ref": "refs/CivilopediaText.schema.json",
         "title": "Civilopedia Text",
         "description": "Civilopedia entry describing this resource."
       }
@@ -154,7 +154,7 @@
         },
         "abundant": {
           "type": "number",
-          "Title": "Abundant",
+          "title": "Abundant",
           "description": "The amount of resources on a tile when the amount is considered abundant."
         }
       },

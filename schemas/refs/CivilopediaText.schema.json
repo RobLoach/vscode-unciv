@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/CivilopediaText.schema.json",
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/refs/CivilopediaText.schema.json",
   "title": "CivilopediaText",
   "description": "A list of civilopedia text entries, including formatting and metadata for display.",
   "type": "array",

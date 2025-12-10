@@ -85,7 +85,7 @@
         "default": false
       },
       "RGB": {
-        "$ref": "Color.schema.json",
+        "$ref": "refs/Color.schema.json",
         "title": "RGB",
         "description": "RGB color for 'Default' tileset display."
       },
@@ -111,11 +111,11 @@
         "description": "Only for NaturalWonder: relative weight of being picked by the map generator."
       },
       "uniques": {
-        "$ref": "Uniques.schema.json",
+        "$ref": "refs/Uniques.schema.json",
         "description": "Unique properties or effects of this terrain."
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json",
+        "$ref": "refs/CivilopediaText.schema.json",
         "description": "Civilopedia entry describing this terrain."
       }
     },

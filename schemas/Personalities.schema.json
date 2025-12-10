@@ -123,14 +123,14 @@
         "default": 5
       },
       "priorities": {
-        "$ref": "Priorities.schema.json",
+        "$ref": "refs/Priorities.schema.json",
         "description": "Priorities for each policy branch."
       },
       "uniques": {
-        "$ref": "Uniques.schema.json"
+        "$ref": "refs/Uniques.schema.json"
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json"
+        "$ref": "refs/CivilopediaText.schema.json"
       }
     },
     "required": [

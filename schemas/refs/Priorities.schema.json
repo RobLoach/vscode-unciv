@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Priorities.schema.json",
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/refs/Priorities.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Priorities",
   "description": "A list of priorities for the object. Used in Personalities and Policies.",

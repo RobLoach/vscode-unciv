@@ -20,7 +20,7 @@
         "description": "Cost of a research agreement in this era."
       },
       "iconRGB": {
-        "$ref": "Color.schema.json",
+        "$ref": "refs/Color.schema.json",
         "title": "Icon RGB",
         "description": "RGB color value for the era's icon."
       },

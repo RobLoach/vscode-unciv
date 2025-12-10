@@ -186,10 +186,10 @@
         "description": "Gold reward for clearing a barbarian camp."
       },
       "uniques": {
-        "$ref": "Uniques.schema.json"
+        "$ref": "refs/Uniques.schema.json"
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json"
+        "$ref": "refs/CivilopediaText.schema.json"
       }
     },
     "additionalProperties": false

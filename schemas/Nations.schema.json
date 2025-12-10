@@ -49,12 +49,12 @@
         ]
       },
       "outerColor": {
-        "$ref": "Color.schema.json",
+        "$ref": "refs/Color.schema.json",
         "title": "Outer Color",
         "description": "The primary color representing the nation."
       },
       "innerColor": {
-        "$ref": "Color.schema.json",
+        "$ref": "refs/Color.schema.json",
         "title": "Inner Color",
         "description": "The secondary color representing the nation."
       },
@@ -84,7 +84,7 @@
         "description": "Types of tiles where the nation is more likely to start."
       },
       "uniques": {
-        "$ref": "Uniques.schema.json",
+        "$ref": "refs/Uniques.schema.json",
         "title": "Unique Abilities",
         "description": "Special abilities or traits unique to this nation."
       },
@@ -183,7 +183,7 @@
         "description": "Freeform text shown to users, overriding the list of uniques."
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json",
+        "$ref": "refs/CivilopediaText.schema.json",
         "description": "Additional descriptive text for the nation in the Civilopedia."
       }
     },

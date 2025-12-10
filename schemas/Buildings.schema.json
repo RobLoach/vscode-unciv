@@ -55,11 +55,11 @@
         "description": "Faith yield provided by this building per turn."
       },
       "uniques": {
-        "$ref": "Uniques.schema.json",
+        "$ref": "refs/Uniques.schema.json",
         "description": "Unique effects provided by this building."
       },
       "civilopediaText": {
-        "$ref": "CivilopediaText.schema.json",
+        "$ref": "refs/CivilopediaText.schema.json",
         "title": "Civilopedia Text",
         "description": "Civilopedia entry for this building."
       },
@@ -80,7 +80,7 @@
         "description": "Gold upkeep per turn for this building."
       },
       "percentStatBonus": {
-        "$ref": "Stats.schema.json",
+        "$ref": "refs/Stats.schema.json",
         "title": "Percent Stat Bonus",
         "description": "Percent-based stat bonuses provided by this building."
       },

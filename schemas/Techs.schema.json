@@ -71,7 +71,7 @@
               "description": "Science cost of this technology. Overrides the column techCost."
             },
             "uniques": {
-              "$ref": "Uniques.schema.json",
+              "$ref": "refs/Uniques.schema.json",
               "description": "List of unique abilities this technology grants."
             },
             "prerequisites": {
@@ -86,7 +86,7 @@
               "uniqueItems": true
             },
             "civilopediaText": {
-              "$ref": "CivilopediaText.schema.json",
+              "$ref": "refs/CivilopediaText.schema.json",
               "description": "Civilopedia entry describing this technology."
             },
             "quote": {

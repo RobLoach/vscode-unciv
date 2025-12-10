@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Events.schema.json",
+  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/GlobalUniques.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "GlobalUniques",
   "description": "GlobalUniques defines uniques that apply globally. e.g. Vanilla rulesets define the effects of Unhappiness here.",
@@ -12,16 +12,16 @@
       "description": "The name field is not used, but still must be set (the Ruleset validator might display it)."
     },
     "uniques": {
-      "$ref": "Uniques.schema.json",
+      "$ref": "refs/Uniques.schema.json",
       "description": "List of unique abilities that apply globally."
     },
     "unitUniques": {
-      "$ref": "Uniques.schema.json",
+      "$ref": "refs/Uniques.schema.json",
       "title": "Unit Uniques",
       "description": "List of unique abilities that apply to each unit."
     },
     "civilopediaText": {
-      "$ref": "CivilopediaText.schema.json"
+      "$ref": "refs/CivilopediaText.schema.json"
     }
   },
   "required": [

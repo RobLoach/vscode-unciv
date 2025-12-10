@@ -20,17 +20,17 @@
         ]
       },
       "friendBonusUniques": {
-        "$ref": "Uniques.schema.json",
+        "$ref": "refs/Uniques.schema.json",
         "title": "Friend Bonus Uniques",
         "description": "List of unique abilities granted to major civilizations when friends with this city state"
       },
       "allyBonusUniques": {
-        "$ref": "Uniques.schema.json",
+        "$ref": "refs/Uniques.schema.json",
         "title": "Ally Bonus Uniques",
         "description": "List of unique abilities granted to major civilizations when allied to city state"
       },
       "color": {
-        "$ref": "Color.schema.json",
+        "$ref": "refs/Color.schema.json",
         "description": "RGB color of text in civilopedia",
         "default": [255, 255, 255]
       }
