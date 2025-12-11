@@ -68,7 +68,8 @@
             "row": {
               "type": "integer",
               "title": "Row",
-              "description": "Vertical placement in the Tech Tree, must be unique per column."
+              "description": "Vertical placement in the Tech Tree, must be unique per column.",
+              "minimum": 1
             },
             "cost": {
               "type": "integer",
