@@ -4,8 +4,9 @@ All notable changes to the "unciv" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [1.0.1]
+## [1.0.2]
 
+- Add JSON Schema Validation tests, and clean up the schemas
 - Fix Atlases.json being considered valid JSON by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/7
 - Add Uniques to Specialists by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/12
 - Add color property to Ruins schema by @RobLoach in https://github.com/RobLoach/vscode-unciv/pull/11
