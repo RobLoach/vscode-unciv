@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Tutorials.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/Tutorials.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Tutorials",
   "type": "array",
   "items": {

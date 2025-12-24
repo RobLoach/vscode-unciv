@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/UnitNameGroups.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/UnitNameGroups.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Unit Name Groups",
   "description": "A list of unit name groups, each with a name and associated unit names.",
   "type": "array",

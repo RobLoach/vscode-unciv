@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Events.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/Events.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Events",
   "description": "A list of game events, including triggers, choices, and presentation details.",
   "type": "array",
