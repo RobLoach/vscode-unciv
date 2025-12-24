@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/TileImprovements.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/TileImprovements.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Tile Improvements",
   "description": "A list of tile improvements, including build requirements and effects.",
   "type": "array",

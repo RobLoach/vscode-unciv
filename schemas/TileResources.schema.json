@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/TileResources.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/TileResources.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Tile Resources",
   "description": "A list of tile resources, including their types, improvements, and discovery requirements.",
   "type": "array",

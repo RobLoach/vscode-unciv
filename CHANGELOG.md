@@ -4,6 +4,10 @@ All notable changes to the "unciv" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.3]
+
+- Use JSON Schemas directly from Unciv
+
 ## [1.0.2]
 
 - Add JSON Schema Validation tests, and clean up the schemas

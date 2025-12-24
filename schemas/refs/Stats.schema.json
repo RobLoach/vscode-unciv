@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/refs/Stats.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/refs/Stats.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Stats",
   "description": "Object representing the main stats for a game entity, such as production, food, gold, science, culture, happiness, and faith.",
   "type": "object",

@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/UnitPromotions.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/UnitPromotions.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Unit Promotions",
   "description": "A list of unit promotions, including prerequisites and effects.",
   "type": "array",

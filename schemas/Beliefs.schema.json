@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Beliefs.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/Beliefs.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Beliefs",
   "description": "Beliefs that can be chosen for religions.",
   "type": "array",

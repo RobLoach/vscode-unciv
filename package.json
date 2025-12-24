@@ -5,7 +5,7 @@
   "publisher": "robloach",
   "author": "Rob Loach (https://robloach.net)",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "icon.png",
   "private": true,
   "engines": {
@@ -17,7 +17,9 @@
     "postbuild": "code --install-extension *.vsix --force",
     "pub": "npx @vscode/vsce publish",
     "test": "ajv compile -s \"schemas/*.schema.json\" -r schemas/refs/Uniques.schema.json -r schemas/refs/Priorities.schema.json -r schemas/refs/Color.schema.json -r schemas/refs/CivilopediaText.schema.json -r schemas/refs/Stats.schema.json",
-    "prettier": "npx prettier --write schemas/*.json *.json schemas/refs/*.json"
+    "preupdate-schemas": "rm -rf unciv schemas",
+    "update-schemas": "git clone https://github.com/yairm210/Unciv.git unciv --depth 2",
+    "postupdate-schemas": "cp -rf unciv/docs/Modders/schemas schemas"
   },
   "categories": [
     "Other"

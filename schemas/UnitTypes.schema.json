@@ -1,6 +1,6 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/UnitTypes.schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/UnitTypes.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Unit Types",
   "description": "A list of unit types, including their movement type and associated uniques.",
   "type": "array",

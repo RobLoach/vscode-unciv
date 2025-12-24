@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/ModOptions.schema.json",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/ModOptions.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Mod Options",
   "description": "Controls declarative mod compatibility and mod-wide settings.",

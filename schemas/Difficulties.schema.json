@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/RobLoach/vscode-unciv/refs/heads/master/schemas/Difficulties.schema.json",
+  "$id": "https://raw.githubusercontent.com/yairm210/Unciv/refs/heads/master/docs/Modders/schemas/Difficulties.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Difficulties",
   "description": "Lists all the available Difficulties.",
