@@ -21,6 +21,24 @@ ext install robloach.unciv
 
 ## Development
 
+### Test
+
+To validate the schemas...
+
+```sh
+npm it
+```
+
+### Update Schemas
+
+To update the schemas from Unciv's upstream...
+
+```sh
+npm run update-schemas
+```
+
+### Build
+
 To install from source, use...
 ```sh
 npm run build
